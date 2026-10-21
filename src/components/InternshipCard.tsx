@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import {
   Briefcase,
@@ -14,10 +14,29 @@ import {
   Layers,
   CheckCircle2,
   Building2,
+  ArrowRight,
+  ArrowUp,
+  TrendingUp,
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import BesidesCoding from './besides-coding';
 
 const InternshipCard = () => {
+  const topRef = useRef<HTMLDivElement>(null);
+  const besidesCodingRef = useRef<HTMLDivElement>(null);
+
+  const scrollToBesidesCoding = () => {
+    if (besidesCodingRef.current) {
+      besidesCodingRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const scrollToTop = () => {
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const openMail = () => {
     window.open('mailto:monishpersonal609@gmail.com', '_blank');
   };
@@ -51,6 +70,7 @@ const InternshipCard = () => {
 
   return (
     <motion.div
+      ref={topRef}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -81,12 +101,20 @@ const InternshipCard = () => {
           </div>
         </div>
 
-        {/* Location badge */}
+        {/* Location & Beside's Coding Right Arrow Shortcut */}
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant="outline" className="font-mono flex items-center gap-1.5 py-1 text-xs text-[#71717A] dark:text-[#9A9A9A]">
             <MapPin className="h-3.5 w-3.5 text-emerald-500" />
             <span>Bangalore, India</span>
           </Badge>
+          <button
+            type="button"
+            onClick={scrollToBesidesCoding}
+            className="group font-sans inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 transition-all cursor-pointer shadow-xs"
+          >
+            <span>Nexie &amp; Runable (Beside&apos;s Coding)</span>
+            <ArrowRight className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-1" />
+          </button>
         </div>
       </div>
 
@@ -205,6 +233,33 @@ const InternshipCard = () => {
         </div>
       </div>
 
+      {/* Management & Growth Experience with Right Arrow Scroll to Beside's Coding */}
+      <div className="mt-6 rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-emerald-500/10 via-card to-primary/10 p-5 sm:p-6 transition-all hover:border-emerald-500/50 shadow-xs">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="space-y-1.5">
+            <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2.5 py-0.5 font-mono text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+              <TrendingUp className="h-3.5 w-3.5" />
+              <span>Management &amp; Growth Experience</span>
+            </div>
+            <h3 className="font-heading text-lg sm:text-xl font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
+              Nexie.ai &amp; Runable AI Leadership
+            </h3>
+            <p className="max-w-2xl font-sans text-xs sm:text-sm leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
+              <strong>Head of Reddit Growth @ Nexie.ai</strong> (scaled affiliate engine to 1,000+ active users with automated scrapers &amp; persona workflows) and <strong>Best Affiliate Award Winner @ Runable AI</strong> ($21M Series A). Led international user acquisition across US &amp; European markets and managed campus operations.
+            </p>
+          </div>
+
+          <button
+            type="button"
+            onClick={scrollToBesidesCoding}
+            className="group inline-flex items-center gap-2 self-start rounded-xl bg-primary px-4 py-2.5 font-sans text-xs font-semibold tracking-[0.02em] text-primary-foreground shadow-sm transition-all hover:opacity-95 hover:shadow sm:self-auto shrink-0 cursor-pointer"
+          >
+            <span>Beside&apos;s Coding Section</span>
+            <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1.5" />
+          </button>
+        </div>
+      </div>
+
       {/* Tech Stack Summary */}
       <div className="mt-6 rounded-xl border border-border bg-accent/30 p-4">
         <div className="flex items-center gap-2">
@@ -258,6 +313,27 @@ const InternshipCard = () => {
           <span>Get in Touch</span>
           <ExternalLink className="h-3.5 w-3.5" />
         </button>
+      </div>
+
+      {/* Embedded Beside's Coding Section with smooth anchor */}
+      <div ref={besidesCodingRef} id="besides-coding-section" className="mt-10 border-t border-border/80 pt-8">
+        <div className="mb-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <TrendingUp className="h-4 w-4 text-emerald-500" />
+            <span className="font-mono text-xs font-semibold uppercase tracking-wider text-[#71717A] dark:text-[#9A9A9A]">
+              Beside&apos;s Coding &amp; Management Deep-Dive
+            </span>
+          </div>
+          <button
+            type="button"
+            onClick={scrollToTop}
+            className="group inline-flex items-center gap-1.5 text-xs font-mono text-[#71717A] hover:text-foreground dark:text-[#9A9A9A] dark:hover:text-[#EDEDED] transition-colors cursor-pointer"
+          >
+            <span>Back to Technical Experience</span>
+            <ArrowUp className="h-3.5 w-3.5 transition-transform duration-200 group-hover:-translate-y-0.5" />
+          </button>
+        </div>
+        <BesidesCoding />
       </div>
     </motion.div>
   );
