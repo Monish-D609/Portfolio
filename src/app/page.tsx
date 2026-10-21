@@ -140,12 +140,15 @@ export default function Home() {
           <WelcomeModal />
         </div>
 
-        <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-          Hey, I'm Monish D 👋
-        </h2>
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          AI Portfolio
+        <p className="font-sans text-xs sm:text-sm font-medium tracking-[0.02em] text-[#71717A] dark:text-[#9A9A9A] mb-1">
+          Hey, I&apos;m
+        </p>
+        <h1 className="font-heading text-[clamp(2.5rem,5.5vw,4.5rem)] font-bold tracking-[-0.03em] leading-none text-foreground dark:text-[#EDEDED]">
+          Monish D
         </h1>
+        <p className="font-heading mt-2 text-[clamp(2rem,4vw,3.25rem)] font-bold tracking-[-0.03em] leading-tight text-[#71717A] dark:text-[#9A9A9A]">
+          AI Portfolio
+        </p>
       </motion.div>
 
       {/* centre avatar */}
@@ -183,7 +186,7 @@ export default function Home() {
               suppressHydrationWarning
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask me anything…"
-              className="w-full border-none bg-transparent text-base font-medium text-neutral-900 placeholder:text-neutral-500 focus:outline-none dark:text-neutral-100 dark:placeholder:text-neutral-400"
+              className="w-full border-none bg-transparent font-sans text-base font-medium tracking-normal text-neutral-900 placeholder:text-neutral-500 focus:outline-none dark:text-[#EDEDED] dark:placeholder:text-[#9A9A9A]"
             />
             <button
               type="submit"
@@ -204,11 +207,11 @@ export default function Home() {
               key={key}
               onClick={() => goToChat(questions[key])}
               variant="outline"
-              className="border-border hover:bg-border/30 aspect-square w-full cursor-pointer rounded-2xl border bg-white/30 py-8 shadow-none backdrop-blur-lg active:scale-95 md:p-10"
+              className="border-border hover:bg-border/30 aspect-square w-full cursor-pointer rounded-2xl border bg-white/30 dark:bg-neutral-900/40 py-8 shadow-none backdrop-blur-lg active:scale-95 md:p-10"
             >
-              <div className="flex h-full flex-col items-center justify-center gap-1 text-gray-700">
+              <div className="flex h-full flex-col items-center justify-center gap-1.5 text-neutral-800 dark:text-[#EDEDED]">
                 <Icon size={22} strokeWidth={2} color={color} />
-                <span className="text-xs font-medium sm:text-sm">{key}</span>
+                <span className="font-sans text-xs font-semibold tracking-[0.02em] sm:text-sm">{key}</span>
               </div>
             </Button>
           ))}

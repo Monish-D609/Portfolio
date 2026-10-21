@@ -10,7 +10,7 @@ export default function EducationCard() {
   const { degrees, summary } = MONISH_PROFILE.education;
 
   return (
-    <div className="w-full max-w-3xl mx-auto space-y-4">
+    <div className="w-full max-w-3xl mx-auto space-y-4 font-sans">
       {/* Header Badge */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -18,15 +18,15 @@ export default function EducationCard() {
             <GraduationCap className="h-5 w-5" />
           </span>
           <div>
-            <h3 className="text-base md:text-lg font-bold text-foreground">
+            <h3 className="font-heading text-lg md:text-xl font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
               Education &amp; Academic Background
             </h3>
-            <p className="text-xs text-muted-foreground">
+            <p className="font-sans text-xs sm:text-sm text-[#71717A] dark:text-[#9A9A9A]">
               Concurrent Engineering &amp; Data Science Degrees
             </p>
           </div>
         </div>
-        <Badge variant="outline" className="border-primary/20 bg-primary/5 text-primary text-xs">
+        <Badge variant="outline" className="font-mono text-xs border-primary/20 bg-primary/5 text-primary">
           Pre-final Year
         </Badge>
       </div>
@@ -47,35 +47,35 @@ export default function EducationCard() {
                   <Building className="h-3 w-3 text-primary" />
                   {index === 0 ? 'Primary Degree' : 'Concurrent Degree'}
                 </span>
-                <span className="inline-flex items-center gap-1 text-[11px] text-muted-foreground">
+                <span className="inline-flex items-center gap-1 font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
                   <Calendar className="h-3 w-3" />
                   {degree.timeline}
                 </span>
               </div>
 
-              <h4 className="mt-3 text-base font-bold text-foreground">
+              <h4 className="mt-3 font-sans text-base font-bold tracking-[-0.01em] text-foreground dark:text-[#EDEDED]">
                 {degree.degree}
               </h4>
-              <p className="text-xs font-semibold text-primary mt-0.5">
+              <p className="font-sans text-xs font-semibold text-primary mt-0.5">
                 {degree.major}
               </p>
 
-              <p className="mt-2 text-xs font-medium text-foreground/90">
+              <p className="mt-2 font-sans text-xs font-medium text-foreground/90">
                 {degree.institution}
               </p>
 
-              <div className="mt-2 flex items-center gap-1.5 text-[11px] text-muted-foreground">
+              <div className="mt-2 flex items-center gap-1.5 font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
                 <MapPin className="h-3 w-3 shrink-0 text-muted-foreground/70" />
                 <span>{degree.location}</span>
               </div>
 
-              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+              <p className="mt-3 font-sans text-xs sm:text-sm leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
                 {degree.highlights}
               </p>
             </div>
 
-            <div className="mt-4 pt-3 border-t border-border/60 flex items-center justify-between text-[11px]">
-              <span className="font-medium text-muted-foreground">Status:</span>
+            <div className="mt-4 pt-3 border-t border-border/60 flex items-center justify-between font-mono text-[11px]">
+              <span className="text-[#71717A] dark:text-[#9A9A9A]">Status:</span>
               <span className="font-semibold text-emerald-600 dark:text-emerald-400">
                 {degree.status}
               </span>
@@ -85,10 +85,10 @@ export default function EducationCard() {
       </div>
 
       {/* Summary Note */}
-      <div className="rounded-xl border border-border/60 bg-accent/40 p-3.5 text-xs text-muted-foreground flex items-start gap-2.5">
+      <div className="rounded-xl border border-border/60 bg-accent/40 p-3.5 text-xs text-[#71717A] dark:text-[#9A9A9A] flex items-start gap-2.5">
         <Sparkles className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-        <p className="leading-relaxed">
-          <strong className="text-foreground">Location note:</strong> Monish lives and is based in Bangalore, while attending VIT Chennai for his on-campus curriculum and IIT Madras for concurrent advanced data science studies.
+        <p className="font-sans text-xs sm:text-sm leading-[1.6]">
+          <strong className="text-foreground dark:text-[#EDEDED]">Location note:</strong> Monish lives and is based in Bangalore, while attending VIT Chennai for his on-campus curriculum and IIT Madras for concurrent advanced data science studies.
         </p>
       </div>
     </div>

@@ -123,19 +123,19 @@ export default function BesidesCoding() {
               <Sparkles className="h-3.5 w-3.5" />
               <span>Growth, Strategy & Leadership</span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-foreground">
               Beside&apos;s Coding
             </h2>
-            <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+            <p className="font-sans max-w-xl text-sm leading-[1.6] text-muted-foreground">
               Beyond engineering, I drive user acquisition, product growth, community building, and cross-functional operations. From pre-revenue zero-to-one traction to scaling subreddits and managing campus flagship festivals.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2 sm:flex-col sm:items-end">
-            <Badge variant="outline" className="border-border/80 bg-background/80 px-3 py-1 text-xs font-medium text-foreground">
+            <Badge variant="outline" className="font-mono border-border/80 bg-background/80 px-3 py-1 text-xs font-medium text-foreground">
               <Building2 className="mr-1.5 h-3.5 w-3.5 text-primary" /> Nexie.ai &amp; Runable AI
             </Badge>
-            <Badge variant="secondary" className="px-3 py-1 text-xs">
+            <Badge variant="secondary" className="font-mono px-3 py-1 text-xs">
               <HeartHandshake className="mr-1.5 h-3.5 w-3.5 text-emerald-500" /> GTM &amp; Operations
             </Badge>
           </div>
@@ -151,17 +151,17 @@ export default function BesidesCoding() {
                 className="group relative overflow-hidden rounded-xl border border-border/60 bg-background/60 p-3.5 backdrop-blur-sm transition-all hover:border-primary/40 hover:shadow-sm"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-medium text-muted-foreground">
+                  <span className="font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
                     {stat.label}
                   </span>
                   <div className={`rounded-lg p-1.5 border ${stat.color}`}>
                     <Icon className="h-3.5 w-3.5" />
                   </div>
                 </div>
-                <div className="mt-2 text-lg md:text-xl font-bold tracking-tight text-foreground">
+                <div className="font-heading mt-2 text-lg md:text-xl font-bold tracking-tight text-foreground">
                   {stat.value}
                 </div>
-                <p className="text-[10px] text-muted-foreground truncate mt-0.5">
+                <p className="font-sans text-[11px] text-[#71717A] dark:text-[#9A9A9A] truncate mt-0.5">
                   {stat.sub}
                 </p>
               </div>

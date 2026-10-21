@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque, JetBrains_Mono, Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
@@ -8,7 +8,20 @@ import SpotifyWidget from "@/components/SpotifyWidget";
 import Script from "next/script";
 import "./globals.css";
 
-// Load Inter font for non-Apple devices
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-bricolage",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
+  weight: ["400", "500"],
+});
+
 const inter = Inter({ 
   subsets: ["latin"],
   variable: "--font-inter",
@@ -78,6 +91,11 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/logo-monish.svg" sizes="any" />
+        {/* Satoshi font from Fontshare */}
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,900&display=swap"
+        />
         {/* Google Analytics */}
         <Script
           async
@@ -100,8 +118,9 @@ export default function RootLayout({
       <body
         suppressHydrationWarning
         className={cn(
-          // "min-h-screen bg-background font-sans antialiased",
-          "min-h-screen bg-white text-black dark:bg-black dark:text-white font-sans antialiased transition-colors duration-500 ease-in-out",
+          "min-h-screen bg-white text-[#121212] dark:bg-black dark:text-[#EDEDED] font-sans antialiased transition-colors duration-500 ease-in-out",
+          bricolage.variable,
+          jetbrainsMono.variable,
           inter.variable,
         )}
       >

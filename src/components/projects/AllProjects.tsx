@@ -10,8 +10,8 @@ export default function AllProjects() {
   console.log(data[0]);
 
   return (
-    <div className="w-full h-full pt-8">
-      <h2 className="max-w-7xl mx-auto text-xl md:text-3xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+    <div className="w-full h-full pt-8 font-sans">
+      <h2 className="max-w-7xl mx-auto font-heading text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
         My Projects
       </h2>
       <Carousel items={cards} />

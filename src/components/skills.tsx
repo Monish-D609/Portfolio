@@ -214,11 +214,11 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
         <div>
           <div className="flex items-center gap-2">
             <Sparkles className="h-6 w-6 text-primary" />
-            <h2 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+            <h2 className="font-heading text-2xl font-semibold tracking-[-0.02em] text-foreground sm:text-3xl">
               Skills &amp; Capabilities
             </h2>
           </div>
-          <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
+          <p className="font-sans mt-1 text-xs text-[#71717A] dark:text-[#9A9A9A] sm:text-sm">
             Dual-engine expertise: Deep technical AI engineering alongside real-world startup growth &amp; leadership.
           </p>
         </div>
@@ -228,7 +228,7 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
           <button
             type="button"
             onClick={() => setActiveTab('all')}
-            className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all ${
+            className={`font-sans rounded-full px-3.5 py-1.5 text-xs font-medium tracking-[0.02em] transition-all ${
               activeTab === 'all'
                 ? 'bg-primary text-primary-foreground shadow-sm'
                 : 'bg-accent/60 text-muted-foreground hover:bg-accent hover:text-foreground'
@@ -239,7 +239,7 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
           <button
             type="button"
             onClick={() => setActiveTab('coding')}
-            className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all ${
+            className={`font-sans inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium tracking-[0.02em] transition-all ${
               activeTab === 'coding'
                 ? 'bg-blue-600 text-white shadow-sm'
                 : 'bg-accent/60 text-muted-foreground hover:bg-accent hover:text-foreground'
@@ -251,7 +251,7 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
           <button
             type="button"
             onClick={() => setActiveTab('besides')}
-            className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all ${
+            className={`font-sans inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium tracking-[0.02em] transition-all ${
               activeTab === 'besides'
                 ? 'bg-emerald-600 text-white shadow-sm'
                 : 'bg-accent/60 text-muted-foreground hover:bg-accent hover:text-foreground'
@@ -273,15 +273,15 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
                   <Code className="h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-foreground sm:text-lg">
+                  <h3 className="font-heading text-base font-semibold tracking-[-0.02em] text-foreground sm:text-lg">
                     1. Coding &amp; Technical Engineering
                   </h3>
-                  <p className="text-[11px] text-muted-foreground sm:text-xs">
+                  <p className="font-sans text-[11px] text-[#71717A] dark:text-[#9A9A9A] sm:text-xs">
                     Agentic loops, multimodal ML, scalable backend microservices, and modern frontend systems.
                   </p>
                 </div>
               </div>
-              <span className="self-start rounded-full bg-blue-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-blue-600 dark:text-blue-400 sm:self-auto">
+              <span className="font-mono self-start rounded-full bg-blue-500/10 px-2.5 py-0.5 text-[11px] font-medium text-blue-600 dark:text-blue-400 sm:self-auto">
                 6 Focus Areas
               </span>
             </div>
@@ -296,7 +296,7 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
                     <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-background shadow-xs">
                       {cat.icon}
                     </span>
-                    <h4 className="text-sm font-bold text-foreground">
+                    <h4 className="font-sans text-sm font-bold tracking-[-0.01em] text-foreground">
                       {cat.category}
                     </h4>
                   </div>
@@ -305,7 +305,7 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
                     {cat.skills.map((skill) => (
                       <span
                         key={skill}
-                        className={`rounded-md border px-2.5 py-1 text-xs font-medium transition-transform hover:scale-[1.03] ${cat.badgeColor}`}
+                        className={`font-mono rounded-md border px-2.5 py-1 text-[0.8rem] font-medium tracking-[-0.01em] transition-transform hover:scale-[1.03] ${cat.badgeColor}`}
                       >
                         {skill}
                       </span>
@@ -326,15 +326,15 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
                   <TrendingUp className="h-4 w-4" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-foreground sm:text-lg">
+                  <h3 className="font-heading text-base font-semibold tracking-[-0.02em] text-foreground sm:text-lg">
                     2. Beside&apos;s Coding, Growth &amp; Leadership
                   </h3>
-                  <p className="text-[11px] text-muted-foreground sm:text-xs">
+                  <p className="font-sans text-[11px] text-[#71717A] dark:text-[#9A9A9A] sm:text-xs">
                     Proven startup distribution, organic Reddit acquisition, affiliate growth, and large-scale leadership.
                   </p>
                 </div>
               </div>
-              <span className="self-start rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400 sm:self-auto">
+              <span className="font-mono self-start rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-medium text-emerald-600 dark:text-emerald-400 sm:self-auto">
                 4 Growth Domains
               </span>
             </div>
@@ -350,7 +350,7 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-background shadow-xs">
                         {cat.icon}
                       </span>
-                      <h4 className="text-sm font-bold text-foreground">
+                      <h4 className="font-sans text-sm font-bold tracking-[-0.01em] text-foreground">
                         {cat.category}
                       </h4>
                     </div>
@@ -358,14 +358,14 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
 
                   <div className="mb-2.5 inline-flex items-center gap-1.5 rounded-full bg-background/80 px-2.5 py-0.5 text-[11px] font-semibold text-foreground border border-border/60">
                     <Flame className="h-3 w-3 text-amber-500" />
-                    <span>{cat.highlightBadge}</span>
+                    <span className="font-mono text-[11px]">{cat.highlightBadge}</span>
                   </div>
 
                   <div className="flex flex-wrap gap-1.5">
                     {cat.skills.map((skill) => (
                       <span
                         key={skill}
-                        className={`rounded-md border px-2.5 py-1 text-xs font-medium transition-transform hover:scale-[1.03] ${cat.badgeColor}`}
+                        className={`font-mono rounded-md border px-2.5 py-1 text-[0.8rem] font-medium tracking-[-0.01em] transition-transform hover:scale-[1.03] ${cat.badgeColor}`}
                       >
                         {skill}
                       </span>

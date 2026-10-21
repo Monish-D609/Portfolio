@@ -166,10 +166,10 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
   }
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-10 font-sans">
       {/* Tagline */}
       {projectData.tagline && (
-        <p className="font-sans text-base font-medium tracking-wide text-neutral-500 italic dark:text-neutral-400">
+        <p className="font-heading text-base font-semibold tracking-[-0.02em] text-[#71717A] dark:text-[#9A9A9A] md:text-lg">
           {projectData.tagline}
         </p>
       )}
@@ -177,24 +177,24 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
       {/* Header section with description */}
       <div className="rounded-3xl bg-[#F5F5F7] p-8 dark:bg-[#1D1D1F]">
         <div className="space-y-6">
-          <div className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-400">
+          <div className="flex items-center gap-2 font-mono text-xs text-[#71717A] dark:text-[#9A9A9A]">
             <span>{projectData.date}</span>
           </div>
 
-          <p className="text-secondary-foreground font-sans text-base leading-relaxed md:text-lg">
+          <p className="font-sans text-[1.05rem] leading-[1.6] text-foreground dark:text-[#EDEDED]">
             {projectData.description}
           </p>
 
           {/* Tech stack */}
           <div className="pt-4">
-            <h3 className="mb-3 text-sm tracking-wide text-neutral-500 uppercase dark:text-neutral-400">
+            <h3 className="mb-3 font-mono text-xs font-semibold uppercase tracking-wider text-[#71717A] dark:text-[#9A9A9A]">
               Technologies
             </h3>
             <div className="flex flex-wrap gap-2">
               {projectData.techStack.map((tech, index) => (
                 <span
                   key={index}
-                  className="rounded-full bg-neutral-200 px-3 py-1 text-sm text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200"
+                  className="font-mono rounded-md border border-border/70 bg-neutral-200/70 px-2.5 py-1 text-[0.8rem] font-medium tracking-[-0.01em] text-foreground dark:bg-neutral-800/80 dark:text-[#EDEDED]"
                 >
                   {tech}
                 </span>
@@ -208,10 +208,10 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
       {projectData.links && projectData.links.length > 0 && (
         <div className="mb-8">
           <div className="mb-4 flex items-center gap-2 px-6">
-            <h3 className="text-sm tracking-wide text-neutral-500 dark:text-neutral-400">
+            <h3 className="font-mono text-xs font-semibold uppercase tracking-wider text-[#71717A] dark:text-[#9A9A9A]">
               Links
             </h3>
-            <Link className="text-muted-foreground w-4" />
+            <Link className="h-4 w-4 text-[#71717A] dark:text-[#9A9A9A]" />
           </div>
           <Separator className="my-4" />
           <div className="space-y-3">
@@ -223,7 +223,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between rounded-xl bg-[#F5F5F7] p-4 transition-colors hover:bg-neutral-200 dark:bg-[#1D1D1F] dark:hover:bg-neutral-800"
               >
-                <span className="font-medium text-neutral-800 dark:text-neutral-200">
+                <span className="font-sans text-sm font-medium tracking-[0.02em] text-foreground dark:text-[#EDEDED]">
                   {link.name}
                 </span>
                 <ChevronRight className="h-4 w-4 text-neutral-400 transition-transform group-hover:translate-x-1" />

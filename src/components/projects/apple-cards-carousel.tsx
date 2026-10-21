@@ -250,13 +250,13 @@ export const Card = ({
                 <div>
                   <motion.p
                     layoutId={layout ? `category-${card.title}` : undefined}
-                    className="text-base font-medium text-black dark:text-white"
+                    className="font-mono text-xs font-medium uppercase tracking-wider text-[#71717A] dark:text-[#9A9A9A]"
                   >
                     {card.category}
                   </motion.p>
                   <motion.p
                     layoutId={layout ? `title-${card.title}` : undefined}
-                    className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white"
+                    className="font-heading mt-2 text-2xl font-bold tracking-[-0.03em] text-foreground dark:text-[#EDEDED] md:text-4xl"
                   >
                     {card.title}
                   </motion.p>
@@ -276,16 +276,16 @@ export const Card = ({
       >
         <div className="absolute inset-x-0 top-0 z-30 h-full cursor-pointer bg-gradient-to-b from-black hover:scale-110 via-transparent to-transparent" />
         {/*<div className="absolute inset-0 z-20 cursor-pointer bg-black/20 hover:bg-black/2" />*/}
-        <div className="relative z-40 p-8">
+        <div className="relative z-40 p-6 md:p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-left font-sans text-sm font-medium text-white md:text-base"
+            className="text-left font-mono text-xs font-medium uppercase tracking-wider text-[#EDEDED]/70"
           >
             {card.category}
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="max-w-xs text-left font-sans text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
+            className="max-w-xs text-left font-sans text-lg font-bold tracking-[-0.01em] [text-wrap:balance] text-[#EDEDED] md:text-2xl"
           >
             {card.shortTitle || card.title}
           </motion.p>

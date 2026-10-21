@@ -92,15 +92,15 @@ export default function ChatMessageContent({
                   remarkPlugins={[remarkGfm]}
                   components={{
                     p: ({ children }) => (
-                      <p className="break-words whitespace-pre-wrap">
+                      <p className="font-sans text-[1.05rem] leading-[1.6] text-foreground dark:text-[#EDEDED] break-words whitespace-pre-wrap">
                         {children}
                       </p>
                     ),
                     ul: ({ children }) => (
-                      <ul className="my-4 list-disc pl-6">{children}</ul>
+                      <ul className="font-sans my-4 list-disc pl-6 text-[1.05rem] leading-[1.6] text-foreground dark:text-[#EDEDED]">{children}</ul>
                     ),
                     ol: ({ children }) => (
-                      <ol className="my-4 list-decimal pl-6">{children}</ol>
+                      <ol className="font-sans my-4 list-decimal pl-6 text-[1.05rem] leading-[1.6] text-foreground dark:text-[#EDEDED]">{children}</ol>
                     ),
                     li: ({ children }) => <li className="my-1">{children}</li>,
                     a: ({ href, children }) => (
@@ -108,7 +108,7 @@ export default function ChatMessageContent({
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
+                        className="text-blue-500 underline underline-offset-2 hover:opacity-80"
                       >
                         {children}
                       </a>

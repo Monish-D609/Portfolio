@@ -147,12 +147,12 @@ export function Others() {
         <div>
           <div className="flex items-center gap-2">
             <Compass className="h-6 w-6 text-primary" />
-            <h2 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
-              Others & Additional Highlights
+            <h2 className="font-heading text-xl font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED] sm:text-2xl">
+              Others &amp; Additional Highlights
             </h2>
           </div>
-          <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
-            Verified certifications, fun rituals & sports, non-coding growth leadership, and resume.
+          <p className="mt-1 font-sans text-xs sm:text-sm text-[#71717A] dark:text-[#9A9A9A]">
+            Verified certifications, fun rituals &amp; sports, non-coding growth leadership, and resume.
           </p>
         </div>
 
@@ -162,7 +162,7 @@ export function Others() {
             href={DRIVE_FOLDER_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-accent/70 px-3 py-1.5 text-xs font-medium text-foreground transition-all hover:border-primary/40 hover:bg-accent"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-accent/70 px-3 py-1.5 font-sans text-xs font-medium tracking-[0.02em] text-foreground transition-all hover:border-primary/40 hover:bg-accent"
           >
             <FolderOpen className="h-3.5 w-3.5 text-primary" />
             <span>Drive Folder</span>
@@ -172,7 +172,7 @@ export function Others() {
             href={RESUME_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-accent/70 px-3 py-1.5 text-xs font-medium text-foreground transition-all hover:border-primary/40 hover:bg-accent"
+            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-accent/70 px-3 py-1.5 font-sans text-xs font-medium tracking-[0.02em] text-foreground transition-all hover:border-primary/40 hover:bg-accent"
           >
             <FileCode2 className="h-3.5 w-3.5 text-primary" />
             <span>Resume</span>
@@ -188,10 +188,10 @@ export function Others() {
             key={tab.id}
             type="button"
             onClick={() => setActiveTab(tab.id)}
-            className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
+            className={`rounded-full px-3.5 py-1.5 font-sans text-xs font-medium tracking-[0.02em] transition-all ${
               activeTab === tab.id
                 ? 'bg-primary text-primary-foreground shadow-sm'
-                : 'bg-accent/60 text-muted-foreground hover:bg-accent hover:text-foreground'
+                : 'bg-accent/60 text-[#71717A] hover:bg-accent hover:text-foreground dark:text-[#9A9A9A] dark:hover:text-[#EDEDED]'
             }`}
           >
             {tab.label}
@@ -212,14 +212,14 @@ export function Others() {
           <div className="relative overflow-hidden rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-emerald-500/10 via-card to-indigo-500/10 p-5 transition-all hover:border-emerald-500/60">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div className="space-y-1">
-                <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-0.5 font-mono text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
                   <TrendingUp className="h-3 w-3" />
                   <span>Featured Section</span>
                 </div>
-                <h3 className="text-base font-bold text-foreground">
+                <h3 className="font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
                   Beside&apos;s Coding — Growth, Startups &amp; Leadership
                 </h3>
-                <p className="max-w-xl text-xs text-muted-foreground leading-relaxed">
+                <p className="max-w-xl font-sans text-xs sm:text-sm leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
                   Head of Reddit Growth at <strong>Nexie.ai</strong> (1,000+ active users &amp; affiliate platform), <strong>Runable AI</strong>{' '}Best Affiliate Award winner ($21M Series A), campus operations at Techno VIT &amp; Vibrance, and full growth engineering funnels.
                 </p>
               </div>
@@ -227,7 +227,7 @@ export function Others() {
               <button
                 type="button"
                 onClick={() => setActiveTab('besides')}
-                className="inline-flex items-center gap-1.5 self-start rounded-lg bg-primary px-3.5 py-2 text-xs font-medium text-primary-foreground transition-all hover:opacity-90 sm:self-auto shrink-0"
+                className="inline-flex items-center gap-1.5 self-start rounded-lg bg-primary px-3.5 py-2 font-sans text-xs font-medium tracking-[0.02em] text-primary-foreground transition-all hover:opacity-90 sm:self-auto shrink-0"
               >
                 <span>Explore Section</span>
                 <ExternalLink className="h-3.5 w-3.5" />
@@ -242,7 +242,7 @@ export function Others() {
             <div className="mb-4 flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Award className="h-5 w-5 text-amber-500" />
-                <h3 className="text-base font-semibold text-foreground">
+                <h3 className="font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
                   Verified Certifications
                 </h3>
               </div>
@@ -250,7 +250,7 @@ export function Others() {
                 href={DRIVE_FOLDER_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-primary hover:underline inline-flex items-center gap-1"
+                className="font-sans text-xs font-medium text-primary hover:underline inline-flex items-center gap-1"
               >
                 <span>Google Drive Folder</span>
                 <ExternalLink className="h-3 w-3" />
@@ -268,16 +268,16 @@ export function Others() {
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent">
                         {cert.icon}
                       </span>
-                      <span className="text-xs font-medium text-muted-foreground">
+                      <span className="font-mono text-xs text-[#71717A] dark:text-[#9A9A9A]">
                         {cert.issuer}
                       </span>
                     </div>
 
-                    <h4 className="mt-3 text-base font-semibold text-foreground">
+                    <h4 className="mt-3 font-sans text-base font-bold tracking-[-0.01em] text-foreground dark:text-[#EDEDED]">
                       {cert.title}
                     </h4>
 
-                    <p className="mt-2.5 text-xs leading-relaxed text-muted-foreground">
+                    <p className="mt-2.5 font-sans text-xs sm:text-sm leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
                       {cert.description}
                     </p>
 
@@ -285,7 +285,7 @@ export function Others() {
                       {cert.skills.map((skill) => (
                         <span
                           key={skill}
-                          className="rounded-md bg-secondary/80 px-2 py-0.5 text-[10px] text-secondary-foreground"
+                          className="rounded-md bg-secondary/80 px-2 py-0.5 font-mono text-[0.8rem] font-medium tracking-[-0.01em] text-secondary-foreground"
                         >
                           {skill}
                         </span>
@@ -298,7 +298,7 @@ export function Others() {
                       href={cert.driveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-lg bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
+                      className="inline-flex items-center gap-1.5 rounded-lg bg-primary/10 px-3.5 py-1.5 font-sans text-xs font-semibold tracking-[0.02em] text-primary transition-colors hover:bg-primary hover:text-primary-foreground"
                     >
                       <span>View</span>
                       <ExternalLink className="h-3.5 w-3.5" />
@@ -315,7 +315,7 @@ export function Others() {
           <div>
             <div className="mb-4 flex items-center gap-2">
               <Sparkles className="h-5 w-5 text-indigo-500" />
-              <h3 className="text-base font-semibold text-foreground">
+              <h3 className="font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
                 Fun &amp; Life Outside Code
               </h3>
             </div>
@@ -331,15 +331,15 @@ export function Others() {
                       {item.icon}
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-foreground">
+                      <h4 className="font-sans text-sm font-bold tracking-[-0.01em] text-foreground dark:text-[#EDEDED]">
                         {item.title}
                       </h4>
-                      <span className="text-[11px] text-muted-foreground">
+                      <span className="font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
                         {item.category}
                       </span>
                     </div>
                   </div>
-                  <p className="mt-2.5 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-2.5 font-sans text-xs sm:text-sm leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
                     {item.desc}
                   </p>
                 </div>
@@ -353,8 +353,8 @@ export function Others() {
           <div>
             <div className="mb-4 flex items-center gap-2">
               <FileCode2 className="h-5 w-5 text-emerald-500" />
-              <h3 className="text-base font-semibold text-foreground">
-                Resume & Academic Profile
+              <h3 className="font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
+                Resume &amp; Academic Profile
               </h3>
             </div>
 
@@ -370,23 +370,23 @@ export function Others() {
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h4 className="text-base font-semibold text-foreground">
+                    <h4 className="font-sans text-base font-bold tracking-[-0.01em] text-foreground dark:text-[#EDEDED]">
                       Monish&apos;s Resume
                     </h4>
-                    <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[11px] font-medium text-emerald-600 dark:text-emerald-400">
+                    <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 font-mono text-[11px] font-medium text-emerald-600 dark:text-emerald-400">
                       Verified
                     </span>
                   </div>
-                  <p className="mt-0.5 text-xs text-muted-foreground">
+                  <p className="mt-0.5 font-sans text-xs sm:text-sm text-[#71717A] dark:text-[#9A9A9A]">
                     B.Tech CSE (Data Science) · VIT Chennai | AI/ML Intern @ Wubble AI
                   </p>
-                  <span className="mt-1 inline-block text-[11px] text-muted-foreground">
+                  <span className="mt-1 inline-block font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
                     Click to view directly in browser tab
                   </span>
                 </div>
               </div>
 
-              <div className="flex items-center self-start gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-xs font-semibold text-primary-foreground sm:self-auto">
+              <div className="flex items-center self-start gap-1.5 rounded-full bg-primary px-3.5 py-1.5 font-sans text-xs font-semibold tracking-[0.02em] text-primary-foreground sm:self-auto">
                 <span>View</span>
                 <ExternalLink className="h-3.5 w-3.5" />
               </div>
@@ -399,7 +399,7 @@ export function Others() {
           <div>
             <div className="mb-4 flex items-center gap-2">
               <Bot className="h-5 w-5 text-purple-500" />
-              <h3 className="text-base font-semibold text-foreground">
+              <h3 className="font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
                 The Bot That Started It All
               </h3>
             </div>
@@ -408,10 +408,10 @@ export function Others() {
               <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
                 <Bot className="h-8 w-8" />
               </div>
-              <h4 className="mt-3 text-base font-semibold text-foreground">
+              <h4 className="mt-3 font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
                 Driven by Autonomous AI Systems
               </h4>
-              <p className="mx-auto mt-2 max-w-lg text-xs leading-relaxed text-muted-foreground">
+              <p className="mx-auto mt-2 max-w-lg font-sans text-xs sm:text-sm leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
                 What began with building simple conversational scripts turned into engineering multi-agent loops, multimodal video analysis, and generative music foundation pipelines. This portfolio is both my interactive workspace and my living proof of shipping production-grade agentic AI.
               </p>
             </div>

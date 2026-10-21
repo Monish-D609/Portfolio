@@ -61,32 +61,34 @@ const ChatLanding: React.FC<ChatLandingProps> = ({ submitQuery }) => {
     >
       {/* Welcome message */}
       <motion.div className="mb-8 text-center" variants={itemVariants}>
-        <h2 className="mb-3 text-2xl font-semibold">
-          I'm Monish's digital twin
+        <h2 className="mb-3 font-heading text-2xl md:text-3xl font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
+          I&apos;m Monish&apos;s digital twin
         </h2>
-        <p className="text-muted-foreground mx-auto max-w-md">
+        <p className="mx-auto max-w-md font-sans text-sm md:text-base leading-[1.6] text-[#71717A] dark:text-[#9A9A9A]">
           The first AI portfolio that adapts dynamically to your needs.
         </p>
       </motion.div>
 
       {/* Suggested questions */}
       <motion.div
-        className="w-full max-w-md space-y-3"
+        className="w-full max-w-md space-y-3 font-sans"
         variants={containerVariants}
       >
         {suggestedQuestions.map((question, index) => (
           <motion.button
             key={index}
-            className="bg-accent hover:bg-accent/80 flex w-full items-center rounded-lg px-4 py-3 transition-colors"
+            className="bg-accent hover:bg-accent/80 flex w-full items-center rounded-xl border border-border/60 px-4 py-3 transition-colors"
             onClick={() => submitQuery(question.text)}
             variants={itemVariants}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="bg-background mr-3 rounded-full p-2">
+            <span className="bg-background mr-3 rounded-full p-2 text-primary shadow-xs">
               {question.icon}
             </span>
-            <span className="text-left">{question.text}</span>
+            <span className="text-left font-sans text-sm font-medium tracking-[0.01em] text-foreground dark:text-[#EDEDED]">
+              {question.text}
+            </span>
           </motion.button>
         ))}
       </motion.div>

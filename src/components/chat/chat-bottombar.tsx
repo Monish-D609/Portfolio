@@ -65,7 +65,7 @@ export default function ChatBottombar({
             placeholder={
               isToolInProgress ? 'Tool is in progress...' : 'Ask me anything...'
             }
-            className="text-base w-full border-none bg-transparent font-medium text-neutral-900 placeholder:text-neutral-500 focus:outline-none dark:text-neutral-100 dark:placeholder:text-neutral-400"
+            className="w-full border-none bg-transparent font-sans text-sm md:text-base font-medium text-neutral-900 placeholder:text-neutral-500 focus:outline-none dark:text-[#EDEDED] dark:placeholder:text-[#9A9A9A]"
             disabled={isToolInProgress || isLoading}
           />
 
