@@ -96,7 +96,7 @@ const InternshipCard = () => {
               </span>
             </div>
             <p className="font-sans mt-0.5 text-xs text-[#71717A] dark:text-[#9A9A9A] sm:text-sm">
-              AI/ML Intern: Agentic AI Systems @ Wubble AI · Pre-final Year B.Tech CSE (Data Science)
+              AI Intern @ Wubble AI · Pre-final Year B.Tech CSE (Data Science)
             </p>
           </div>
         </div>
@@ -139,7 +139,7 @@ const InternshipCard = () => {
                 </span>
               </div>
               <h3 className="font-sans mt-1 text-lg font-bold tracking-[-0.01em] text-foreground sm:text-xl">
-                AI/ML Intern: Agentic AI Systems
+                AI Intern
               </h3>
               <p className="font-sans mt-0.5 text-sm font-medium text-primary">
                 <a

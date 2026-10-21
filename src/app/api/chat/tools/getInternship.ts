@@ -8,7 +8,7 @@ export const getInternship = tool({
   execute: async () => {
     return `Here is my current experience and background 👇
 
-- 🚀 **Current Role**: **AI/ML Intern: Agentic AI Systems** at **Wubble AI** (Singapore-based, remote internship)
+- 🚀 **Current Role**: **AI Intern** at **Wubble AI** (Singapore-based, remote internship)
   - *About Wubble.ai*: World's first B2B AI Music platform, backed by Antler, Google, and NVIDIA (Top 5 startup in Asia).
   - *Responsibilities*: Designing core agentic loops (planning, memory, tool integration), system-prompt engineering, building CLI tooling & micro-services, FastAPI/OpenAPI hardening, reproducible agent simulation testing rigs, and Docker/Cloud Run deployments.
 - 🔬 **Research Experience**: Research Intern at **IIT Mandi VIML Lab** (implemented Multimodal LLM-based Video Summarization with visual semantic understanding, Kendall’s τ = 0.253).

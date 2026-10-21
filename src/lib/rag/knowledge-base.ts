@@ -51,16 +51,16 @@ His coursework and research focus on data science, machine learning, systems, an
   {
     id: 'experience-wubble',
     category: 'experience',
-    title: 'Wubble AI Internship (Agentic AI Systems)',
+    title: 'Wubble AI Internship (AI Intern)',
     keywords: ['wubble', 'wubble ai', 'current company', 'current internship', 'current role', 'where do you work', 'internship', 'experience', 'generative music'],
-    content: `Monish is currently an AI/ML Intern: Agentic AI Systems at Wubble AI (remote internship). Wubble AI is a Singapore-based startup building the world's first B2B AI Music platform, backed by Antler, Google, and NVIDIA (Top 5 startup in Asia).
+    content: `Monish is currently an AI Intern at Wubble AI (remote internship). Wubble AI is a Singapore-based startup building the world's first B2B AI Music platform, backed by Antler, Google, and NVIDIA (Top 5 startup in Asia).
 Responsibilities:
 - Designing and implementing core agentic loops (autonomous planning, memory management, tool integration).
 - System-prompt engineering and latency/safety optimization.
 - Crafting RESTful production APIs using FastAPI and OpenAPI schemas.
 - Building reproducible simulation test rigs for agent reliability.
 - Containerization and cloud deployments using Docker, GKE, and Cloud Run.`,
-    directAnswer: "Monish is an AI/ML Intern: Agentic AI Systems at Wubble AI, a Singapore-based startup building the world's first B2B AI Music platform backed by Antler, Google, and NVIDIA. He architects autonomous agentic loops, prompt evaluation pipelines, and production FastAPI services.",
+    directAnswer: "Monish is an AI Intern at Wubble AI, a Singapore-based startup building the world's first B2B AI Music platform backed by Antler, Google, and NVIDIA. He architects autonomous agentic loops, prompt evaluation pipelines, and production FastAPI services.",
   },
   {
     id: 'experience-nexie',

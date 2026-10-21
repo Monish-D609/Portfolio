@@ -48,7 +48,7 @@ export const MONISH_PROFILE = {
   workExperience: [
     {
       company: 'Wubble AI',
-      role: 'AI/ML Intern: Agentic AI Systems',
+      role: 'AI Intern',
       timeline: '2 Months (Current)',
       type: 'Remote Internship',
       companyDescription: "Singapore-based startup redefining generative music with the world's first B2B AI Music platform, backed by Antler, Google, and NVIDIA (Top 5 startup in Asia).",

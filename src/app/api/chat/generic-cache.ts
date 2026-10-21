@@ -229,7 +229,7 @@ export const GENERIC_PRESETS: Array<{
   {
     category: 'internship',
     toolName: 'getInternship',
-    text: "I am currently an AI/ML Intern: Agentic AI Systems at Wubble AI — a Singapore-based startup building the world's first B2B AI Music platform (backed by Antler, Google, and NVIDIA · Top 5 in Asia). Here are the details about my current role, engineering responsibilities, and experience!",
+    text: "I am currently an AI Intern at Wubble AI — a Singapore-based startup building the world's first B2B AI Music platform (backed by Antler, Google, and NVIDIA · Top 5 in Asia). Here are the details about my current role, engineering responsibilities, and experience!",
     triggers: [
       'what is your work experience tell me about your internships and roles',
       'what is your work experience',

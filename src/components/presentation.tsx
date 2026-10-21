@@ -11,10 +11,10 @@ export function Presentation() {
     name: 'Monish D',
     education: 'B.Tech in CSE (Data Science) · Pre-final Year, VIT Chennai',
     location: 'Bangalore, India (College: VIT Chennai)',
-    currentRole: 'AI/ML Intern: Agentic AI Systems @ Wubble AI',
+    currentRole: 'AI Intern @ Wubble AI',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Monish, a pre-final year B.Tech in CSE (Data Science) student at VIT Chennai, based in Bangalore. I am currently an AI/ML Intern: Agentic AI Systems at Wubble AI (Singapore-based, world's first B2B AI Music platform backed by Antler, Google, and NVIDIA). I build agentic workflows, LLM evaluation platforms, audio engineering and computer vision systems, leveraging multimodal deep learning to solve real-world challenges.",
+      "Hey 👋\nI'm Monish, a pre-final year B.Tech in CSE (Data Science) student at VIT Chennai, based in Bangalore. I am currently an AI Intern at Wubble AI (Singapore-based, world's first B2B AI Music platform backed by Antler, Google, and NVIDIA). I build agentic workflows, LLM evaluation platforms, audio engineering and computer vision systems, leveraging multimodal deep learning to solve real-world challenges.",
     src: '/profile-monish.jpg',
     fallbackSrc:
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop',
@@ -108,7 +108,7 @@ export function Presentation() {
               </div>
               <div className="mt-1.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h4 className="text-sm font-semibold text-foreground">
-                  AI/ML Intern: Agentic AI Systems @{' '}
+                  AI Intern @{' '}
                   <a
                     href="https://wubble.ai/"
                     target="_blank"

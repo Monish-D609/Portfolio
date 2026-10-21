@@ -85,7 +85,7 @@ const questionsByCategory = [
     icon: BriefcaseIcon,
     questions: [
       'What is your work experience? Tell me about your internships and roles.',
-      'Tell me about your role as AI/ML Intern at Wubble AI',
+      'Tell me about your role as AI Intern at Wubble AI',
       'What did you do during your research internship at IIT Mandi VIML Lab?',
       'What makes you a valuable team member?',
       'Where are you working now?',
