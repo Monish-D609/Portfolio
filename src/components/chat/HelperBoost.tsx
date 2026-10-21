@@ -41,8 +41,7 @@ const questions = {
   Projects: 'What are your projects? What are you working on right now?',
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
   "Beside's Coding": "Tell me about what you do beside coding. Show me your growth, leadership, and non-coding achievements.",
-  Fun: "What's the craziest thing you've ever done? What are your hobbies and favorite sports?",
-  Others: 'What else can you share? Show me others and additional highlights.',
+  Others: 'What else can you share? Show me others, fun & sports, and additional highlights.',
   Contact:
     'How can I reach you? What kind of project would make you say "yes" immediately?',
 };
@@ -52,7 +51,6 @@ const questionConfig = [
   { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
   { key: 'Skills', color: '#856ED9', icon: Layers },
   { key: "Beside's Coding", color: '#10B981', icon: TrendingUp },
-  { key: 'Fun', color: '#B95F9D', icon: PartyPopper },
   { key: 'Others', color: '#E07A5F', icon: Compass },
 ];
 
@@ -66,7 +64,7 @@ const specialQuestions = [
   'What projects are you most proud of?',
   'What are your skills?',
   'How can I reach you?',
-  "What's the craziest thing you've ever done?",
+  'What else can you share? Show me others, fun & sports, and additional highlights.',
 ];
 
 const questionsByCategory = [
@@ -119,15 +117,14 @@ const questionsByCategory = [
     ],
   },
   {
-    id: 'fun',
-    name: 'Fun',
-    icon: PartyPopper,
+    id: 'others',
+    name: 'Others & Fun',
+    icon: Compass,
     questions: [
-      'Bike you said?? Show me!',
-      "What's the craziest thing you've ever done?",
-      'Mac or PC?',
-      'what sports do you like?',
-      'What are you certain about that 90% get wrong?',
+      'What else can you share? Show me others, fun & sports, and additional highlights.',
+      'What are your hobbies, coffee ritual, and favorite sports?',
+      'Can I see your certificates and credentials?',
+      'Tell me about your background and personal milestones',
     ],
   },
   {

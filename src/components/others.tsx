@@ -16,8 +16,6 @@ import {
   FileText,
   Image as ImageIcon,
   Trophy,
-  Gamepad2,
-  Bike,
   Sparkles,
   Bot,
   Compass,

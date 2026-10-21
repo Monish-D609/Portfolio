@@ -12,7 +12,6 @@ import {
   Laugh,
   Layers,
   Mail,
-  PartyPopper,
   TrendingUp,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -26,8 +25,7 @@ const questions = {
   Projects: 'What are your projects? What are you working on right now?',
   Skills: 'What are your skills? Give me a list of your soft and hard skills.',
   "Beside's Coding": "Tell me about what you do beside coding. Show me your growth, leadership, and non-coding achievements.",
-  Fun: 'What’s the craziest thing you’ve ever done? What are your hobbies?',
-  Others: 'What else can you share? Show me others and additional highlights.',
+  Others: 'What else can you share? Show me others, fun & sports, and additional highlights.',
 } as const;
 
 const questionConfig = [
@@ -35,7 +33,6 @@ const questionConfig = [
   { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
   { key: 'Skills', color: '#856ED9', icon: Layers },
   { key: "Beside's Coding", color: '#10B981', icon: TrendingUp },
-  { key: 'Fun', color: '#B95F9D', icon: PartyPopper },
   { key: 'Others', color: '#E07A5F', icon: CircleEllipsis },
 ] as const;
 
