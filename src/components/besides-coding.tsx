@@ -508,15 +508,14 @@ export default function BesidesCoding() {
         </div>
       )}
 
-      {/* Tab 4: Skills Matrix & Certifications */}
+      {/* Tab 4: GTM, Marketing & Strategy */}
       {(activeTab === 'all' || activeTab === 'skills') && (
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-base font-semibold text-foreground flex items-center gap-2">
+            <h3 className="font-heading text-base sm:text-lg font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED] flex items-center gap-2">
               <Layers className="h-4 w-4 text-cyan-500" />
-              Non-Coding Skills Matrix &amp; Business Credentials
+              GTM, Marketing &amp; Strategy
             </h3>
-            <span className="text-xs text-muted-foreground">GTM, Data, &amp; Strategy</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
