@@ -118,12 +118,12 @@ export default function Home() {
         <button
           suppressHydrationWarning
           onClick={() => goToChat('Are you open to new opportunities?')}
-          className="relative flex cursor-pointer items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
+          className="group relative flex cursor-pointer items-center gap-2 rounded-full border border-neutral-200/80 bg-white/80 px-3.5 sm:px-4 py-1.5 text-xs sm:text-sm font-sans font-medium text-neutral-800 shadow-sm backdrop-blur-md transition-all hover:border-neutral-300 hover:bg-white hover:scale-105 active:scale-95 dark:border-white/10 dark:bg-neutral-900/80 dark:text-[#EDEDED] dark:hover:border-white/20 dark:hover:bg-neutral-800"
         >
           {/* Green pulse dot */}
           <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
           </span>
           Looking for a talent?
         </button>

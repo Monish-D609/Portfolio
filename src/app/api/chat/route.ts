@@ -25,6 +25,7 @@ import { getCertificates } from './tools/getCertificates';
 import { getOthers } from './tools/getOthers';
 import { getBesidesCoding } from './tools/getBesidesCoding';
 import { getEducation } from './tools/getEducation';
+import { getOpportunities } from './tools/getOpportunities';
 import { retrieveContext, RAG_FALLBACK_MESSAGE } from '@/lib/rag/retriever';
 
 export const maxDuration = 30;
@@ -66,6 +67,7 @@ const tools = {
   getOthers,
   getBesidesCoding,
   getEducation,
+  getOpportunities,
 };
 
 function startChat(

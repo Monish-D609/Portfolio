@@ -12,6 +12,7 @@ import Certificates from '../certificates';
 import Others from '../others';
 import BesidesCoding from '../besides-coding';
 import EducationCard from '../education';
+import OpportunitiesCard from '../opportunities-card';
 
 interface ToolRendererProps {
   toolInvocations: any[];
@@ -116,6 +117,13 @@ export default function ToolRenderer({
             return (
               <div key={toolCallId} className="w-full rounded-lg">
                 <EducationCard />
+              </div>
+            );
+
+          case 'getOpportunities':
+            return (
+              <div key={toolCallId} className="w-full rounded-lg">
+                <OpportunitiesCard />
               </div>
             );
 
