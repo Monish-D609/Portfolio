@@ -59,6 +59,7 @@ export default function ChatBottombar({
             ref={inputRef}
             type="text"
             value={input}
+            suppressHydrationWarning
             onChange={handleInputChange}
             onKeyDown={handleKeyPress}
             placeholder={
@@ -70,6 +71,7 @@ export default function ChatBottombar({
 
           <button
             type="submit"
+            suppressHydrationWarning
             disabled={isLoading || !input.trim() || isToolInProgress}
             className="flex items-center justify-center rounded-full bg-[#0171E3] p-2 text-white shadow-sm transition-all hover:bg-blue-600 disabled:opacity-50"
             onClick={(e) => {

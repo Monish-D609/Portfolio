@@ -215,6 +215,7 @@ function GithubButton({
       onKeyDown={handleKeyDown}
       role="button"
       tabIndex={0}
+      suppressHydrationWarning
       aria-label={repoUrl ? `Star ${label} on GitHub` : label}
       {...props}
     >

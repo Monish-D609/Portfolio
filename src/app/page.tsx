@@ -100,6 +100,7 @@ export default function Home() {
       {/* Top right actions */}
       <div className="absolute top-6 right-8 z-20 flex items-center gap-2">
         <button
+          suppressHydrationWarning
           onClick={() => goToChat('How can I contact you?')}
           className="flex cursor-pointer items-center gap-1.5 rounded-full border border-border bg-background/80 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-md transition-all hover:border-primary/40 hover:bg-accent hover:text-primary"
         >
@@ -118,6 +119,7 @@ export default function Home() {
 
       <div className="absolute top-6 left-6 z-20">
         <button
+          suppressHydrationWarning
           onClick={() => goToChat('Are you open to new opportunities?')}
           className="relative flex cursor-pointer items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800"
         >
@@ -181,6 +183,7 @@ export default function Home() {
               ref={inputRef}
               type="text"
               value={input}
+              suppressHydrationWarning
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask me anything…"
               className="w-full border-none bg-transparent text-base font-medium text-neutral-900 placeholder:text-neutral-500 focus:outline-none dark:text-neutral-100 dark:placeholder:text-neutral-400"
@@ -188,6 +191,7 @@ export default function Home() {
             <button
               type="submit"
               disabled={!input.trim()}
+              suppressHydrationWarning
               aria-label="Submit question"
               className="flex items-center justify-center rounded-full bg-[#0171E3] p-2.5 text-white shadow-sm transition-colors hover:bg-blue-600 disabled:opacity-70 dark:bg-blue-600 dark:hover:bg-blue-700"
             >

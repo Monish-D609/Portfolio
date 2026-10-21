@@ -271,6 +271,7 @@ const Chat = () => {
 
       <div className="absolute top-6 right-8 z-51 flex items-center justify-center gap-2">
         <button
+          suppressHydrationWarning
           onClick={submitContactQuery}
           className="flex cursor-pointer items-center gap-1.5 rounded-full border border-border bg-background/80 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-md transition-all hover:border-primary/40 hover:bg-accent hover:text-primary"
         >
