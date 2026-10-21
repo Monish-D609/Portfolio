@@ -237,9 +237,19 @@ const InternshipCard = () => {
       <div className="mt-6 rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-emerald-500/10 via-card to-primary/10 p-5 sm:p-6 transition-all hover:border-emerald-500/50 shadow-xs">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="space-y-1.5">
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2.5 py-0.5 font-mono text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
-              <TrendingUp className="h-3.5 w-3.5" />
-              <span>Management &amp; Growth Experience</span>
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2.5 py-0.5 font-mono text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
+                <TrendingUp className="h-3.5 w-3.5" />
+                <span>Management &amp; Growth Experience</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <div className="flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500/10 p-0.5 ring-1 ring-emerald-500/20">
+                  <img src="/nexie-icon.png" alt="Nexie" className="h-full w-full object-contain" />
+                </div>
+                <div className="flex h-5 w-5 items-center justify-center rounded-md bg-white p-0.5 ring-1 ring-border/50">
+                  <img src="/runable-logo.png" alt="Runable" className="h-full w-full object-contain" />
+                </div>
+              </div>
             </div>
             <h3 className="font-heading text-lg sm:text-xl font-semibold tracking-[-0.02em] text-foreground dark:text-[#EDEDED]">
               Nexie.ai &amp; Runable AI Leadership
