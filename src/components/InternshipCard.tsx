@@ -81,14 +81,11 @@ const InternshipCard = () => {
           </div>
         </div>
 
-        {/* Location & Remote badge */}
+        {/* Location badge */}
         <div className="flex flex-wrap items-center gap-2">
           <Badge variant="outline" className="font-mono flex items-center gap-1.5 py-1 text-xs text-[#71717A] dark:text-[#9A9A9A]">
             <MapPin className="h-3.5 w-3.5 text-emerald-500" />
             <span>Bangalore, India</span>
-          </Badge>
-          <Badge variant="secondary" className="font-mono text-xs">
-            Remote-ready
           </Badge>
         </div>
       </div>

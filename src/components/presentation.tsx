@@ -119,7 +119,7 @@ export function Presentation() {
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 </h4>
-                <span className="text-[11px] text-muted-foreground">Singapore (Remote)</span>
+                <span className="text-[11px] text-muted-foreground">Singapore</span>
               </div>
               <p className="mt-1 text-xs text-muted-foreground">
                 World&apos;s first B2B AI Music platform · Backed by Antler, Google, NVIDIA (Top 5 in Asia)
