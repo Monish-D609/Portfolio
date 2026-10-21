@@ -166,15 +166,24 @@ const InternshipCard = () => {
         {/* Research at IIT Mandi */}
         <div className="rounded-xl border border-border bg-accent/40 p-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Cpu className="h-4 w-4 text-purple-500" />
-              <h4 className="font-sans text-sm font-bold tracking-[-0.01em] text-foreground">
-                Research Internship: IIT Mandi VIML Lab
-              </h4>
+            <div className="flex items-center gap-2.5">
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white p-1 shadow-xs ring-1 ring-border/60">
+                <img
+                  src="/iit-mandi-logo.png"
+                  alt="IIT Mandi Logo"
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <div>
+                <h4 className="font-sans text-sm font-bold tracking-[-0.01em] text-foreground">
+                  Research Internship: IIT Mandi VIML Lab
+                </h4>
+                <span className="font-mono text-[10px] text-[#71717A] dark:text-[#9A9A9A]">Visual Intelligence &amp; Machine Learning</span>
+              </div>
             </div>
             <span className="font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">May – Jun 2026</span>
           </div>
-          <p className="font-sans mt-2 text-xs leading-[1.6] text-muted-foreground">
+          <p className="font-sans mt-2.5 text-xs leading-[1.6] text-muted-foreground">
             Implemented a Multimodal LLM-based Video Summarization architecture that solved critical limitations of conventional text- or caption-based summarization by embedding true semantic understanding with respect to visual features. Achieved Kendall’s τ benchmark of 0.253 and Spearman’s ρ of 0.282 on SumMe.
           </p>
         </div>

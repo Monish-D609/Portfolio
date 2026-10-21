@@ -169,9 +169,20 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
     <div className="space-y-10 font-sans">
       {/* Tagline */}
       {projectData.tagline && (
-        <p className="font-heading text-base font-semibold tracking-[-0.02em] text-[#71717A] dark:text-[#9A9A9A] md:text-lg">
-          {projectData.tagline}
-        </p>
+        <div className="flex items-center justify-between gap-4">
+          <p className="font-heading text-base font-semibold tracking-[-0.02em] text-[#71717A] dark:text-[#9A9A9A] md:text-lg">
+            {projectData.tagline}
+          </p>
+          {projectData.title === 'LLMVS' && (
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white p-1 shadow-xs ring-1 ring-border">
+              <img
+                src="/iit-mandi-logo.png"
+                alt="IIT Mandi Logo"
+                className="h-full w-full object-contain"
+              />
+            </div>
+          )}
+        </div>
       )}
 
       {/* Header section with description */}
