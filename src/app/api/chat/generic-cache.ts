@@ -48,7 +48,7 @@ export const GENERIC_PRESETS: Array<{
   {
     category: 'opportunities',
     toolName: 'getOpportunities',
-    text: "Absolutely! I'm on the lookout for fresh challenges—especially production Agentic AI systems, Multimodal Deep Learning, and frontier AI engineering. 🚀",
+    text: "Looking for someone who gets things moving? I build, solve problems, and turn ideas into things that work. If you're building something ambitious, check out my open invitation below—let's talk! 🚀",
     triggers: [
       'are you open to new opportunities',
       'are you open to opportunities',
