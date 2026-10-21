@@ -52,8 +52,8 @@ Want to get this project running on your local machine? Follow these simple step
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/Monish-D609/ai-native-portfolio.git
-    cd ai-native-portfolio
+    git clone https://github.com/Monish-D609/Portfolio.git
+    cd Portfolio
     ```
 
 2.  **Install dependencies:**

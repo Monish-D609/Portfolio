@@ -5,7 +5,7 @@
 export const revalidate = 3600;
 
 // Repository reference for GitHub stars count
-const REPO = 'Monish-D609/ai-native-portfolio';
+const REPO = 'Monish-D609/Portfolio';
 const GITHUB_API = `https://api.github.com/repos/${REPO}`;
 
 async function fetchStars(withAuth: boolean): Promise<Response> {
@@ -19,7 +19,10 @@ async function fetchStars(withAuth: boolean): Promise<Response> {
     if (token) headers['Authorization'] = `Bearer ${token}`;
   }
 
-  return fetch(GITHUB_API, { headers });
+  return fetch(GITHUB_API, { 
+    headers,
+    signal: AbortSignal.timeout(4000),
+  });
 }
 
 export async function GET() {

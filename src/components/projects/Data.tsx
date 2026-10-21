@@ -249,6 +249,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
                   src={image.src}
                   alt={image.alt}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover transition-transform"
                 />
               </div>
