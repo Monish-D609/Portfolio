@@ -22,16 +22,16 @@ import { ThemeToggle } from '@/components/ui/ThemeToggle'; // Import the theme t
 /* ---------- quick-question data ---------- */
 const questions = {
   Me: 'Who are you? I want to know more about you.',
-  Projects: 'What are your projects? What are you working on right now?',
-  Skills: 'What are your skills? Give me a list of your soft and hard skills.',
+  Experience: 'What is your work experience? Tell me about your internships and roles.',
+  'Projects & Skills': 'What are your projects and skills? Show me your work, technical stack, and capabilities.',
   "Beside's Coding": "Tell me about what you do beside coding. Show me your growth, leadership, and non-coding achievements.",
   Others: 'What else can you share? Show me others, fun & sports, and additional highlights.',
 } as const;
 
 const questionConfig = [
   { key: 'Me', color: '#329696', icon: Laugh },
-  { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
-  { key: 'Skills', color: '#856ED9', icon: Layers },
+  { key: 'Experience', color: '#0284C7', icon: BriefcaseBusiness },
+  { key: 'Projects & Skills', color: '#856ED9', icon: Layers },
   { key: "Beside's Coding", color: '#10B981', icon: TrendingUp },
   { key: 'Others', color: '#E07A5F', icon: CircleEllipsis },
 ] as const;

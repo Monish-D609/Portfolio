@@ -4,6 +4,7 @@ import Crazy from '../crazy';
 import InternshipCard from '../InternshipCard';
 import { Presentation } from '../presentation';
 import AllProjects from '../projects/AllProjects';
+import ProjectsSkills from '../projects-skills';
 import Resume from '../resume';
 import Skills from '../skills';
 import Sports from '../sport';
@@ -34,7 +35,7 @@ export default function ToolRenderer({
                 key={toolCallId}
                 className="w-full overflow-hidden rounded-lg"
               >
-                <AllProjects />
+                <ProjectsSkills initialTab="projects" />
               </div>
             );
 
@@ -65,7 +66,7 @@ export default function ToolRenderer({
           case 'getSkills':
             return (
               <div key={toolCallId} className="w-full rounded-lg">
-                <Skills />
+                <ProjectsSkills initialTab="skills" />
               </div>
             );
 

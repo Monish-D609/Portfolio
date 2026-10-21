@@ -38,8 +38,8 @@ interface HelperBoostProps {
 
 const questions = {
   Me: 'Who are you? I want to know more about you.',
-  Projects: 'What are your projects? What are you working on right now?',
-  Skills: 'What are your skills? Give me a list of your soft and hard skills.',
+  Experience: 'What is your work experience? Tell me about your internships and roles.',
+  'Projects & Skills': 'What are your projects and skills? Show me your work, technical stack, and capabilities.',
   "Beside's Coding": "Tell me about what you do beside coding. Show me your growth, leadership, and non-coding achievements.",
   Others: 'What else can you share? Show me others, fun & sports, and additional highlights.',
   Contact:
@@ -48,21 +48,21 @@ const questions = {
 
 const questionConfig = [
   { key: 'Me', color: '#329696', icon: Laugh },
-  { key: 'Projects', color: '#3E9858', icon: BriefcaseBusiness },
-  { key: 'Skills', color: '#856ED9', icon: Layers },
+  { key: 'Experience', color: '#0284C7', icon: BriefcaseBusiness },
+  { key: 'Projects & Skills', color: '#856ED9', icon: Layers },
   { key: "Beside's Coding", color: '#10B981', icon: TrendingUp },
   { key: 'Others', color: '#E07A5F', icon: Compass },
 ];
 
 // Helper drawer data
 const specialQuestions = [
+  'What is your work experience at Wubble AI?',
+  'What are your projects and skills?',
   'Where do you currently work?',
-  'What certificates do you have?',
   'What do you do beside coding?',
   'Who are you?',
   'Can I see your resume?',
-  'What projects are you most proud of?',
-  'What are your skills?',
+  'What certificates do you have?',
   'How can I reach you?',
   'What else can you share? Show me others, fun & sports, and additional highlights.',
 ];
@@ -80,6 +80,31 @@ const questionsByCategory = [
     ],
   },
   {
+    id: 'experience',
+    name: 'Experience (MVP)',
+    icon: BriefcaseIcon,
+    questions: [
+      'What is your work experience? Tell me about your internships and roles.',
+      'Tell me about your role as AI/ML Intern at Wubble AI',
+      'What did you do during your research internship at IIT Mandi VIML Lab?',
+      'What makes you a valuable team member?',
+      'Where are you working now?',
+      'Can I see your resume?',
+    ],
+  },
+  {
+    id: 'projects-skills',
+    name: 'Projects & Skills',
+    icon: CodeIcon,
+    questions: [
+      'What are your projects and skills? Show me your work, technical stack, and capabilities.',
+      'What projects are you most proud of?',
+      'Tell me about Continuum and Meridian',
+      'What are your technical coding and GenAI skills?',
+      'What are your beside coding growth and leadership skills?',
+    ],
+  },
+  {
     id: 'besides-coding',
     name: "Beside's Coding",
     icon: TrendingUp,
@@ -88,32 +113,6 @@ const questionsByCategory = [
       'Tell me about your growth roles at Nexie.ai and Runable AI',
       'What are your non-coding projects and achievements?',
       'Tell me about your campus leadership at Techno VIT and Vibrance',
-    ],
-  },
-  {
-    id: 'professional',
-    name: 'Professional',
-    icon: BriefcaseIcon,
-    questions: [
-      'Can I see your resume?',
-      'What makes you a valuable team member?',
-      'Where are you working now?',
-      'Why should I hire you?',
-      "What's your educational background?",
-    ],
-  },
-  {
-    id: 'projects',
-    name: 'Projects',
-    icon: CodeIcon,
-    questions: ['What projects are you most proud of?'],
-  },
-  {
-    id: 'skills',
-    name: 'Skills',
-    icon: GraduationCapIcon,
-    questions: [
-      'What are your skills?',
     ],
   },
   {

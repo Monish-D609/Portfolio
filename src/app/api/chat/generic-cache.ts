@@ -138,6 +138,22 @@ export const GENERIC_PRESETS: Array<{
     ],
   },
   {
+    category: 'projects-skills',
+    toolName: 'getProjects',
+    text: "Here is my combined Projects & Skills showcase! You can explore my featured production AI platforms (Continuum, Meridian, AI Video Agent) as well as my dual-engine skills matrix covering both Coding & AI engineering and Beside's Coding growth & leadership. Check out the interactive showcase below!",
+    triggers: [
+      'what are your projects and skills show me your work technical stack and capabilities',
+      'what are your projects and skills',
+      'projects and skills',
+      'skills and projects',
+      'projects skills',
+      'skills projects',
+      'show me your projects and skills',
+      'show me your work technical stack and capabilities',
+      'what are your projects and skills show me your work and technical expertise',
+    ],
+  },
+  {
     category: 'projects',
     toolName: 'getProjects',
     text: "Here are my featured projects! You can explore details about AI Video Agent (Multimodal Video Intelligence & RAG), Continuum (Decision Archaeology Agent), Meridian (LLM Benchmarking Platform), and my LLMVS research at IIT Mandi VIML Lab. Which one would you like to know more about?",
@@ -215,6 +231,10 @@ export const GENERIC_PRESETS: Array<{
     toolName: 'getInternship',
     text: "I am currently an AI/ML Intern: Agentic AI Systems at Wubble AI — a Singapore-based startup building the world's first B2B AI Music platform (backed by Antler, Google, and NVIDIA · Top 5 in Asia). Here are the details about my current role, engineering responsibilities, and experience!",
     triggers: [
+      'what is your work experience tell me about your internships and roles',
+      'what is your work experience',
+      'tell me about your internships and roles',
+      'internships and roles',
       'internship',
       'internships',
       'wubble',
