@@ -190,18 +190,19 @@ export default function Skills({ initialTab = 'all' }: SkillsProps) {
     },
     {
       category: 'Campus Leadership & Operations',
-      highlightBadge: 'Techno VIT (6,000+ Attendees) & Vibrance',
+      highlightBadge: 'Android Club (Techno VIT) & VITSION (Vibrance)',
       icon: <Users className="h-5 w-5 text-rose-500" />,
       accentColor: 'border-rose-500/30 bg-rose-500/5',
       badgeColor:
         'bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/20 hover:border-rose-500/40',
       skills: [
+        'Android Club Core Management (Techno VIT)',
+        'VITSION Core Operations (Vibrance Festival)',
         'Cross-Functional Team Leadership (40+ Members)',
         '₹15L+ Budget & Finance Oversight',
         'Large-Scale Event Logistics',
         'Corporate Sponsorship Negotiation',
         'High-Pressure Crisis Management',
-        'Stakeholder & Vendor Management',
       ],
     },
   ];

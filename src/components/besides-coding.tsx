@@ -436,38 +436,73 @@ export default function BesidesCoding() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            <div className="rounded-xl border border-border bg-card p-4.5 transition-all hover:border-amber-500/30">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-amber-500 uppercase tracking-wider">
-                  Android Club · 2025–2026
-                </span>
-                <Badge variant="secondary" className="text-[10px]">
-                  Techno VIT
-                </Badge>
+            {/* Android Club */}
+            <div className="rounded-xl border border-border bg-card p-5 transition-all hover:border-amber-500/40 hover:shadow-sm">
+              <div className="flex items-start gap-3.5">
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-border/80 bg-white p-1.5 shadow-xs">
+                  <img
+                    src="/android-club-logo.png"
+                    alt="Android Club Logo"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center justify-between gap-1">
+                    <span className="text-xs font-semibold text-amber-500 uppercase tracking-wider">
+                      Android Club · 2025–2026
+                    </span>
+                    <Badge variant="secondary" className="text-[10px]">
+                      Techno VIT
+                    </Badge>
+                  </div>
+                  <h4 className="mt-1 text-base font-bold text-foreground">
+                    Core Management Member
+                  </h4>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                    Spearheaded the planning and execution of Techno VIT: coordinated multi-track event schedules, managed cross-functional team assignments, aligned faculty coordinators, and directed on-ground execution for hundreds of participants.
+                  </p>
+                </div>
               </div>
-              <h4 className="mt-2 text-base font-bold text-foreground">
-                Core Management Member
-              </h4>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                Spearheaded the planning and execution of Techno VIT: coordinated multi-track event schedules, managed cross-functional team assignments, aligned faculty coordinators, and directed on-ground execution for hundreds of participants.
-              </p>
             </div>
 
-            <div className="rounded-xl border border-border bg-card p-4.5 transition-all hover:border-indigo-500/30">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-semibold text-indigo-500 uppercase tracking-wider">
-                  VITSION · 2025–2026
-                </span>
-                <Badge variant="secondary" className="text-[10px]">
-                  Vibrance Festival
-                </Badge>
+            {/* VITSION */}
+            <div className="rounded-xl border border-border bg-card p-5 transition-all hover:border-indigo-500/40 hover:shadow-sm">
+              <div className="flex items-start gap-3.5">
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-border/80 bg-neutral-950 p-1.5 shadow-xs">
+                  <img
+                    src="/vitsion-logo.webp"
+                    alt="VITSION Logo"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center justify-between gap-1">
+                    <span className="text-xs font-semibold text-indigo-500 uppercase tracking-wider">
+                      VITSION · 2025–2026
+                    </span>
+                    <Badge variant="secondary" className="text-[10px]">
+                      Vibrance Festival
+                    </Badge>
+                  </div>
+                  <div className="mt-1 flex items-center justify-between gap-2">
+                    <h4 className="text-base font-bold text-foreground truncate">
+                      Core Operations Member
+                    </h4>
+                    <a
+                      href="https://www.vitsionvitc.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex shrink-0 items-center gap-1 text-[11px] font-medium text-primary hover:underline"
+                    >
+                      <span>vitsionvitc.in</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </div>
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                    Managed end-to-end event logistics, crowd control, and volunteer coordination for VITSION&apos;s flagship events during Vibrance (one of South India&apos;s largest university cultural and technical festivals).
+                  </p>
+                </div>
               </div>
-              <h4 className="mt-2 text-base font-bold text-foreground">
-                Core Operations Member
-              </h4>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                Managed end-to-end event logistics, crowd control, and volunteer coordination for VITSION&apos;s flagship events during Vibrance (one of South India&apos;s largest university cultural and technical festivals).
-              </p>
             </div>
           </div>
         </div>
