@@ -132,26 +132,28 @@ export default function BesidesCoding() {
         </div>
 
         {/* Highlight Stats Row */}
-        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="mt-6 grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
             return (
               <div
                 key={idx}
-                className="group relative overflow-hidden rounded-xl border border-border/60 bg-background/60 p-3.5 backdrop-blur-sm transition-all hover:border-primary/40 hover:shadow-sm"
+                className="group relative flex flex-col justify-between rounded-2xl border border-border/70 bg-card/70 p-4 shadow-2xs backdrop-blur-md transition-all hover:border-primary/40 hover:bg-card hover:shadow-sm dark:bg-card/40 dark:hover:bg-card/60"
               >
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
-                    {stat.label}
-                  </span>
-                  <div className={`rounded-lg p-1.5 border ${stat.color}`}>
-                    <Icon className="h-3.5 w-3.5" />
+                <div>
+                  <div className="flex items-start justify-between gap-2">
+                    <span className="font-mono text-xs font-medium leading-snug text-[#71717A] dark:text-[#9A9A9A] min-h-[2.4rem] flex items-center">
+                      {stat.label}
+                    </span>
+                    <div className={`shrink-0 rounded-xl p-2 border ${stat.color} transition-transform duration-200 group-hover:scale-110`}>
+                      <Icon className="h-4 w-4" />
+                    </div>
+                  </div>
+                  <div className="font-heading my-2 text-xl sm:text-2xl font-bold tracking-tight text-foreground dark:text-[#EDEDED]">
+                    {stat.value}
                   </div>
                 </div>
-                <div className="font-heading mt-2 text-lg md:text-xl font-bold tracking-tight text-foreground">
-                  {stat.value}
-                </div>
-                <p className="font-sans text-[11px] text-[#71717A] dark:text-[#9A9A9A] truncate mt-0.5">
+                <p className="font-sans text-xs leading-relaxed text-[#71717A] dark:text-[#9A9A9A] pt-1 border-t border-border/40 mt-2">
                   {stat.sub}
                 </p>
               </div>
@@ -475,7 +477,7 @@ export default function BesidesCoding() {
                     </Badge>
                   </div>
                   <div className="mt-1 flex items-center justify-between gap-2">
-                    <h4 className="text-base font-bold text-foreground truncate">
+                    <h4 className="text-base font-bold text-foreground">
                       Core Operations Member
                     </h4>
                     <a
