@@ -146,8 +146,8 @@ export default function Home() {
         <h1 className="font-heading text-[clamp(2.5rem,5.5vw,4.5rem)] font-bold tracking-[-0.03em] leading-none text-foreground dark:text-[#EDEDED]">
           Monish D
         </h1>
-        <p className="font-heading mt-2 text-[clamp(2rem,4vw,3.25rem)] font-bold tracking-[-0.03em] leading-tight text-[#71717A] dark:text-[#9A9A9A]">
-          AI Portfolio
+        <p className="font-heading mt-2 text-[clamp(1.5rem,3.5vw,2.75rem)] font-bold tracking-[-0.03em] leading-tight text-[#71717A] dark:text-[#9A9A9A]">
+          Building that matters, rather doable.
         </p>
       </motion.div>
 
