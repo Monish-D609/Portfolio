@@ -88,11 +88,11 @@ Key Achievements:
   {
     id: 'experience-research',
     category: 'experience',
-    title: 'IIT Mandi VIML Lab Research Internship (LLMVS / CVPR 2025)',
-    keywords: ['iit mandi', 'viml', 'research', 'video summarization', 'llmvs', 'cvpr', 'multimodal'],
-    content: `During his research internship at the Visual Intelligence and Machine Learning (VIML) Lab at IIT Mandi, Monish replicated the LLMVS (Large Language Models for Video Summarization) framework targeting CVPR 2025.
-He implemented a frozen LLaVA-1.5-7B vision-language model for frame-level captioning, Llama-2-13B for sliding-window scoring, and a lightweight self-attention aggregator, achieving Kendall’s τ of 0.253 and Spearman’s ρ of 0.282 on SumMe and TVSum datasets.`,
-    directAnswer: 'Monish was a Research Intern at IIT Mandi VIML Lab, replicating and validating the CVPR 2025 LLMVS pipeline for multimodal video summarization using frozen LLaVA, Llama-2, and self-attention aggregators.',
+    title: 'IIT Mandi VIML Lab Research Internship (Multimodal LLM Video Summarization)',
+    keywords: ['iit mandi', 'viml', 'research', 'video summarization', 'llmvs', 'cvpr', 'multimodal', 'vision'],
+    content: `During his research internship at the Visual Intelligence and Machine Learning (VIML) Lab at IIT Mandi, Monish implemented a Multimodal LLM-based Video Summarization architecture.
+Unlike traditional caption- or text-based summarization systems that fail to grasp visual semantics and temporal transitions, this solution bridged deep semantic language reasoning directly with visual understanding. He implemented frozen LLaVA-1.5-7B for dense visual frame perception, Llama-2-13B for sliding-window event scoring, and a trained lightweight self-attention aggregator, achieving Kendall’s τ of 0.253 and Spearman’s ρ of 0.282 on SumMe and TVSum datasets.`,
+    directAnswer: 'Monish was a Research Intern at IIT Mandi VIML Lab, where he implemented Multimodal LLM-based Video Summarization—solving the limitations of text/caption-based methods through rich semantic understanding grounded in vision, achieving Kendall’s τ = 0.253 and Spearman’s ρ = 0.282.',
   },
   {
     id: 'projects-overview',

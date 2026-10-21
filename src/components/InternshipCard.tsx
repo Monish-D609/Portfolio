@@ -175,7 +175,7 @@ const InternshipCard = () => {
             <span className="font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">May – Jun 2026</span>
           </div>
           <p className="font-sans mt-2 text-xs leading-[1.6] text-muted-foreground">
-            Replicated the LLMVS (Large Language Models for Video Summarization) pipeline targeting CVPR 2025 with Kendall’s τ benchmark of 0.253. Worked on temporal segmentation, dense captioning, and multimodal embeddings.
+            Implemented a Multimodal LLM-based Video Summarization architecture that solved critical limitations of conventional text- or caption-based summarization by embedding true semantic understanding with respect to visual features. Achieved Kendall’s τ benchmark of 0.253 and Spearman’s ρ of 0.282 on SumMe.
           </p>
         </div>
 

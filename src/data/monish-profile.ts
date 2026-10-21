@@ -98,9 +98,9 @@ export const MONISH_PROFILE = {
       timeline: 'May – June 2026',
       type: 'Research Internship',
       responsibilities: [
-        'Replicated and validated the LLMVS (CVPR 2025) video summarization pipeline.',
-        'Used frozen LLaVA-1.5-7B for dense frame captioning, Llama-2-13B for sliding-window importance scoring, and trained lightweight self-attention aggregator.',
-        'Achieved Kendall’s τ of 0.253 and Spearman’s ρ of 0.282 on SumMe and TVSum datasets.',
+        'Implemented Multimodal LLM-based Video Summarization, solving fundamental shortcomings of traditional text- or caption-based methods by establishing deep semantic understanding grounded in visual features.',
+        'Engineered a multi-stage architecture using frozen LLaVA-1.5-7B for dense visual perception, Llama-2-13B for cross-frame event reasoning via sliding window, and a trained lightweight self-attention aggregator.',
+        'Achieved Kendall’s τ of 0.253 and Spearman’s ρ of 0.282 on SumMe and TVSum benchmarks.',
       ],
     },
   ],

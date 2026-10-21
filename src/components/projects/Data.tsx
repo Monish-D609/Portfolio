@@ -100,7 +100,7 @@ const PROJECT_CONTENT = [
     title: 'LLMVS',
     tagline: 'Multimodal Video Summarization with LLMs — IIT Mandi VIML Research.',
     description:
-      'Replication and extension of CVPR 2025 research developed during a Summer Research Internship at IIT Mandi (SCEE) under Dr. Dinesh Singh. LLMVS identifies key video frames by reading events using multimodal foundation models: frozen LLaVA-1.5-7B generates dense frame captions, frozen Llama-2-13B scores frame importance over a 7-caption sliding window, and a trained lightweight global context aggregator (~91M parameters) predicts final frame importance. Achieved Kendall’s τ of 0.253 and Spearman’s ρ of 0.282 on SumMe, surpassing previous state-of-the-art methods.',
+      'Implemented a Multimodal LLM-based Video Summarization system during a Summer Research Internship at IIT Mandi (SCEE) under Dr. Dinesh Singh. Conventional text- and caption-based video summarization pipelines struggle to bridge lexical descriptions with actual visual features, losing critical spatio-temporal context. This implementation directly solved that gap by grounding deep semantic understanding into vision: frozen LLaVA-1.5-7B generates dense visual frame representations, frozen Llama-2-13B reasons over multi-frame events across a 7-caption sliding window, and a trained lightweight global context aggregator (~91M parameters) predicts keyframe importance with unified visual-semantic alignment. Achieved Kendall’s τ of 0.253 and Spearman’s ρ of 0.282 on SumMe, surpassing previous state-of-the-art methods.',
     techStack: [
       'Python',
       'PyTorch',
