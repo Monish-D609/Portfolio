@@ -49,18 +49,24 @@ His coursework and research focus on data science, machine learning, systems, an
     directAnswer: 'Monish is currently in his pre-final year pursuing a B.Tech in Computer Science Engineering (Data Science) at VIT Chennai. In parallel, he is also pursuing a B.S. in Data Science and Applications at IIT Madras. While his college is in Chennai, he is based and lives in Bangalore.',
   },
   {
-    id: 'experience-wubble',
+    id: 'employment-status',
     category: 'experience',
-    title: 'Wubble AI Internship (AI Intern)',
-    keywords: ['wubble', 'wubble ai', 'current company', 'current internship', 'current role', 'where do you work', 'internship', 'experience', 'generative music'],
-    content: `Monish is currently an AI Intern at Wubble AI (remote internship). Wubble AI is a Singapore-based startup building the world's first B2B AI Music platform, backed by Antler, Google, and NVIDIA (Top 5 startup in Asia).
-Responsibilities:
-- Designing and implementing core agentic loops (autonomous planning, memory management, tool integration).
-- System-prompt engineering and latency/safety optimization.
-- Crafting RESTful production APIs using FastAPI and OpenAPI schemas.
-- Building reproducible simulation test rigs for agent reliability.
-- Containerization and cloud deployments using Docker, GKE, and Cloud Run.`,
-    directAnswer: "Monish is an AI Intern at Wubble AI, a Singapore-based startup building the world's first B2B AI Music platform backed by Antler, Google, and NVIDIA. He architects autonomous agentic loops, prompt evaluation pipelines, and production FastAPI services.",
+    title: 'Current Employment Status & Availability',
+    keywords: [
+      'current role',
+      'current company',
+      'where do you work',
+      'current job',
+      'employment',
+      'open to work',
+      'available',
+      'internship status',
+      'are you working',
+      'where are you working',
+    ],
+    content: `Monish is currently not actively employed and is open to work! He is actively seeking new opportunities in AI/ML Engineering, Autonomous Agentic Systems, and Multimodal Deep Learning, including full-time roles and high-impact internships.`,
+    directAnswer:
+      'Monish is currently not actively employed and is open to work! He is actively seeking roles and internships in AI/ML Engineering, Agentic AI Systems, and Multimodal Deep Learning.',
   },
   {
     id: 'experience-nexie',

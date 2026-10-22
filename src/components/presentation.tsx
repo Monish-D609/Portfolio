@@ -11,10 +11,10 @@ export function Presentation() {
     name: 'Monish D',
     education: 'B.Tech in CSE (Data Science) · Pre-final Year, VIT Chennai',
     location: 'Bangalore, India (College: VIT Chennai)',
-    currentRole: 'AI Intern @ Wubble AI',
+    currentRole: 'Open to Work · AI/ML Engineer',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm Monish, a pre-final year B.Tech in CSE (Data Science) student at VIT Chennai, based in Bangalore. I am currently an AI Intern at Wubble AI (Singapore-based, world's first B2B AI Music platform backed by Antler, Google, and NVIDIA). I build agentic workflows, LLM evaluation platforms, audio engineering and computer vision systems, leveraging multimodal deep learning to solve real-world challenges.",
+      "Hey 👋\nI'm Monish, a pre-final year B.Tech in CSE (Data Science) student at VIT Chennai, based in Bangalore. I am currently open to work and actively seeking high-impact AI/ML engineering roles and internships. I build agentic workflows, LLM evaluation platforms, audio engineering and computer vision systems, leveraging multimodal deep learning to solve real-world challenges.",
     src: '/profile-monish.jpg',
     fallbackSrc:
       'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop',
@@ -94,35 +94,26 @@ export function Presentation() {
               </div>
             </div>
 
-            {/* Current Position Banner */}
-            <div className="mt-3.5 rounded-xl border border-primary/25 bg-primary/5 p-3.5 backdrop-blur-sm">
+            {/* Open to Work Banner */}
+            <div className="mt-3.5 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-3.5 backdrop-blur-sm">
               <div className="flex items-center justify-between gap-2">
-                <span className="flex items-center gap-1.5 text-xs font-semibold text-primary">
+                <span className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
                   <Briefcase className="h-3.5 w-3.5" />
-                  Currently Employed
+                  Open to Work
                 </span>
                 <span className="flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  Active Internship
+                  Actively Seeking Roles
                 </span>
               </div>
               <div className="mt-1.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h4 className="text-sm font-semibold text-foreground">
-                  AI Intern @{' '}
-                  <a
-                    href="https://wubble.ai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline decoration-primary/40 underline-offset-2 hover:text-primary transition-colors inline-flex items-center gap-1"
-                  >
-                    Wubble AI
-                    <ExternalLink className="h-3 w-3" />
-                  </a>
+                  Available for AI/ML Engineering &amp; Research Opportunities
                 </h4>
-                <span className="text-[11px] text-muted-foreground">Singapore</span>
+                <span className="text-[11px] text-muted-foreground">Bangalore / Remote</span>
               </div>
               <p className="mt-1 text-xs text-muted-foreground">
-                World&apos;s first B2B AI Music platform · Backed by Antler, Google, NVIDIA (Top 5 in Asia)
+                Specializing in Autonomous Agentic Loops, Multimodal Deep Learning, and Production AI Systems
               </p>
             </div>
           </motion.div>

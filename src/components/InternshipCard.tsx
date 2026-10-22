@@ -41,33 +41,6 @@ const InternshipCard = () => {
     window.open('mailto:monishpersonal609@gmail.com', '_blank');
   };
 
-  const wubbleResponsibilities = [
-    {
-      title: 'Agent Architecture & Development',
-      desc: 'Design, build, and iterate on core agentic loops, including autonomous planning, memory management, and tool integration for Wubble’s generative music platform.',
-    },
-    {
-      title: 'System-Prompt Engineering',
-      desc: 'Design and execute rigorous experiments to improve helpfulness, safety, persona consistency, and inference latency of production AI agents.',
-    },
-    {
-      title: 'Custom Tooling & Micro-services',
-      desc: 'Craft CLI utilities and micro-services that streamline developer workflows and expand agent capabilities.',
-    },
-    {
-      title: 'API Development & Hardening',
-      desc: 'Design, version, document, and test production-grade RESTful APIs using FastAPI, enforcing rigorous schemas via OpenAPI.',
-    },
-    {
-      title: 'Agent Validation & Simulation Testing',
-      desc: 'Build reproducible, data-driven test rigs (unit + simulation) to guarantee agent reliability and correctness across edge cases.',
-    },
-    {
-      title: 'Cloud & CI/CD Deployment',
-      desc: 'Package components into multi-stage Docker containers, automate CI/CD pipelines, and manage scalable deployments on GKE / Cloud Run.',
-    },
-  ];
-
   return (
     <motion.div
       ref={topRef}
@@ -92,11 +65,11 @@ const InternshipCard = () => {
                 Monish D
               </h2>
               <span className="font-mono rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400">
-                ● Currently Interning
+                ● Open to Work
               </span>
             </div>
             <p className="font-sans mt-0.5 text-xs text-[#71717A] dark:text-[#9A9A9A] sm:text-sm">
-              AI Intern @ Wubble AI · Pre-final Year B.Tech CSE (Data Science)
+              AI/ML Engineer · Open to Opportunities · Pre-final Year B.Tech CSE (Data Science)
             </p>
           </div>
         </div>
@@ -118,60 +91,66 @@ const InternshipCard = () => {
         </div>
       </div>
 
-      {/* Featured Current Role: Wubble AI */}
-      <div className="mt-6 rounded-xl border border-primary/30 bg-primary/5 p-5 sm:p-6">
+      {/* Featured Status: Open to Opportunities */}
+      <div className="mt-6 rounded-xl border border-emerald-500/30 bg-emerald-500/5 p-5 sm:p-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
           <div className="flex items-start gap-3">
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/95 p-1.5 shadow-sm ring-1 ring-border">
-              <img
-                src="/wubble-logo.svg"
-                alt="Wubble AI Logo"
-                className="h-full w-full object-contain"
-              />
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-500 p-2 shadow-sm ring-1 ring-emerald-500/20">
+              <Sparkles className="h-6 w-6" />
             </div>
             <div>
               <div className="flex flex-wrap items-center gap-2">
-                <span className="font-mono rounded bg-primary/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary">
-                  Current Role
+                <span className="font-mono rounded bg-emerald-500/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                  Current Status
                 </span>
                 <span className="font-mono text-xs text-[#71717A] dark:text-[#9A9A9A]">
-                  Singapore · Remote (Internship)
+                  Bangalore / Remote · Immediate Availability
                 </span>
               </div>
               <h3 className="font-sans mt-1 text-lg font-bold tracking-[-0.01em] text-foreground sm:text-xl">
-                AI Intern
+                Open to Opportunities &amp; Actively Seeking Roles
               </h3>
-              <p className="font-sans mt-0.5 text-sm font-medium text-primary">
-                <a
-                  href="https://wubble.ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 underline underline-offset-2 hover:opacity-80"
-                >
-                  Wubble AI (wubble.ai)
-                  <ExternalLink className="h-3.5 w-3.5" />
-                </a>
+              <p className="font-sans mt-0.5 text-sm font-medium text-emerald-600 dark:text-emerald-400">
+                Targeting AI/ML Engineering, Agentic Systems &amp; Frontier AI
               </p>
             </div>
           </div>
 
-          <span className="font-mono self-start rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 sm:self-auto">
-            Active Employment
+          <span className="font-mono self-start rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-semibold text-emerald-600 dark:text-emerald-400 sm:self-auto flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+            Available Now
           </span>
         </div>
 
-        {/* Company Overview */}
+        {/* Opportunity Overview */}
         <p className="font-sans mt-4 text-xs leading-[1.6] text-muted-foreground sm:text-sm">
-          <strong>About Wubble.ai:</strong> World’s first B2B AI Music platform, redefining music generation with foundation models for enterprise leaders worldwide (Disney, Starbucks, Microsoft, HP). Backed by <strong>Antler, Google, NVIDIA</strong>, and recognized as one of the <strong>Top 5 startups in Asia</strong>.
+          Currently not actively employed and seeking high-impact roles, engineering internships, and early-stage startup collaborations. Ready to architect autonomous agentic loops, multimodal pipelines, and production-grade ML infrastructure.
         </p>
 
-        {/* Responsibilities Grid */}
-        <div className="mt-4 pt-4 border-t border-primary/15">
+        {/* What I Bring / Focus Areas */}
+        <div className="mt-4 pt-4 border-t border-emerald-500/15">
           <h4 className="text-xs font-bold uppercase tracking-wider text-foreground">
-            Key Responsibilities & Engineering Focus
+            Core Engineering Focus &amp; Value Proposition
           </h4>
           <div className="mt-3 grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-            {wubbleResponsibilities.map((item) => (
+            {[
+              {
+                title: 'Autonomous Agentic AI Loops',
+                desc: 'Architecture and iteration of multi-agent loops, state planning, persistent memory, tool-calling protocols (MCP), and production reliability.',
+              },
+              {
+                title: 'Multimodal Deep Learning & Vision',
+                desc: 'Research and deployment of vision-language models (LLaVA, Whisper, multimodal video summarization) grounded in visual semantics.',
+              },
+              {
+                title: 'Production API & Microservices Hardening',
+                desc: 'Designing deterministic RESTful APIs using FastAPI, strict OpenAPI validation schemas, and reproducible test rigs.',
+              },
+              {
+                title: 'Cloud, Containerization & CI/CD',
+                desc: 'Packaging services into lightweight multi-stage Docker containers, CI/CD pipelines, and scalable deployments.',
+              },
+            ].map((item) => (
               <div
                 key={item.title}
                 className="rounded-lg border border-border/60 bg-background/60 p-3"

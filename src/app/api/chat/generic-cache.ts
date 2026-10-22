@@ -257,7 +257,7 @@ export const GENERIC_PRESETS: Array<{
   {
     category: 'internship',
     toolName: 'getInternship',
-    text: "I am currently an AI Intern at Wubble AI — a Singapore-based startup building the world's first B2B AI Music platform (backed by Antler, Google, and NVIDIA · Top 5 in Asia). Here are the details about my current role, engineering responsibilities, and experience!",
+    text: "I am currently open to work and actively seeking high-impact AI/ML engineering roles, agentic AI systems positions, and internships! Here are the details about my experience, research, and technical background.",
     triggers: [
       'what is your work experience tell me about your internships and roles',
       'what is your work experience',
@@ -265,9 +265,6 @@ export const GENERIC_PRESETS: Array<{
       'internships and roles',
       'internship',
       'internships',
-      'wubble',
-      'wubble ai',
-      'wubble.ai',
       'where do you work',
       'where do you currently work',
       'where are you working now',

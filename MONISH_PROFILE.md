@@ -13,7 +13,7 @@
 - **LinkedIn**: [linkedin.com/in/monish-d07](https://www.linkedin.com/in/monish-d07/)
 - **GitHub**: [github.com/Monish-D609](https://github.com/Monish-D609)
 - **Core Focus**: GenAI, Autonomous Agentic Systems, Multimodal AI, Audio Engineering, and Computer Vision.
-- **Career Stance**: Actively seeking AI/ML Engineering and GenAI/Agentic systems roles & research internships. Explicitly **not** looking for generic full-stack development roles.
+- **Employment Status**: Open to work / Available for opportunities (not actively employed). Actively seeking AI/ML Engineering and GenAI/Agentic systems roles & research internships. Explicitly **not** looking for generic full-stack development roles.
 
 ---
 
@@ -37,16 +37,7 @@ Monish is pursuing dual concurrent academic credentials:
 
 ## 3. Professional Experience & Internships
 
-### 1. Wubble AI — AI/ML Intern: Agentic AI Systems
-- **Timeline**: 2 Months (Current Remote Internship)
-- **Company**: Singapore-based generative music platform building the world's first B2B AI Music foundation model. Backed by **Antler, Google, and NVIDIA** (Top 5 startup in Asia).
-- **Core Responsibilities**:
-  - **Agentic Loop Architecture**: Designing and testing autonomous multi-agent loops with persistent memory, dynamic tool calling, and planning strategies.
-  - **Prompt Engineering & Evaluation**: Creating rigorous automated evaluation test rigs to optimize agent helpfulness, safety, latency, and tone consistency.
-  - **FastAPI Microservices**: Architecting production REST APIs with strict OpenAPI specifications and deterministic response schemas.
-  - **DevOps & Cloud**: Packaging systems into Docker containers and orchestrating deployments across GKE (Google Kubernetes Engine) and Cloud Run.
-
-### 2. Nexie.ai — Founding Head of Reddit Growth & Software Developer
+### 1. Nexie.ai — Founding Head of Reddit Growth & Software Developer
 - **Timeline**: July 2026 – Present
 - **Company**: AI-native Email Service Provider (ESP) for Shopify e-commerce brands.
 - **Impact & Achievements**:
@@ -54,7 +45,7 @@ Monish is pursuing dual concurrent academic credentials:
   - Reached a sustained **1,000+ monthly organic post run rate** within 2 months.
   - Engineered and deployed the full-stack **Nexie Reddit Affiliate Platform & Dashboard** (Next.js, React, Vercel, Claude) with live telemetry and automated subreddit scrapers.
 
-### 3. Runable AI — Growth & Affiliate Marketing
+### 2. Runable AI — Growth & Affiliate Marketing
 - **Timeline**: March 2026 – July 2026
 - **Company**: Autonomous AI agent platform (raised $21M Series A).
 - **Impact & Achievements**:
@@ -62,11 +53,11 @@ Monish is pursuing dual concurrent academic credentials:
   - Converted developer users across Europe and the US into paid recurring subscribers.
   - Awarded **#1 Best Affiliate** at Runable AI.
 
-### 4. InAmigos Foundation — AI Web Development Intern
+### 3. InAmigos Foundation — AI Web Development Intern
 - **Timeline**: April – May 2026
 - **Impact**: Optimized site speed, reduced page load latency, resolved layout shifts for mobile viewports, and built high-converting responsive hero sections.
 
-### 5. Visual Intelligence & Machine Learning (VIML) Lab, IIT Mandi — Research Intern
+### 4. Visual Intelligence & Machine Learning (VIML) Lab, IIT Mandi — Research Intern
 - **Timeline**: May – June 2026
 - **Research**: Replicated the **LLMVS** (Large Language Models for Video Summarization) pipeline targeting CVPR 2025.
 - **Technical Implementation**:

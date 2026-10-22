@@ -39,7 +39,7 @@ Built with Next.js 16 (Turbopack), Tailwind CSS, Framer Motion, and a 3-tier res
 *   **💼 "Looking for a talent?" Open Invitation:** Direct top-left portal showcasing Monish's target roles, production Agentic AI credentials, Multimodal LLM research, and 1-click contact routing.
 *   **⚡ Zero-Latency Generic Cache & RAG Engine:** Pre-cached deterministic routes guarantee 0ms instant responses for standard queries while maintaining 100% factual accuracy with zero LLM credit burn.
 *   **🔬 Grounded Experience & Research Cards:**
-    *   **Wubble AI:** Core agentic loop architecture, system-prompt engineering, FastAPI/OpenAPI hardening, simulation test rigs, and Docker/Cloud Run deployments.
+    *   **Open to Work & Engineering Focus:** Core agentic loop architecture, system-prompt engineering, FastAPI/OpenAPI hardening, simulation test rigs, and Docker/Cloud Run deployments.
     *   **IIT Mandi VIML Lab:** Multimodal LLM-based Video Summarization grounding LLM reasoning in vision semantics (SumMe Kendall’s $\tau = 0.253$).
     *   **Beside's Coding (Nexie.ai & Runable AI):** Reddit growth engineering (1,000+ users in 30 days) and award-winning international affiliate marketing ($21M Series A).
 *   **🎨 Premium Fluid Design System:** Custom typography (Bricolage Grotesque + Satoshi + JetBrains Mono), smooth dark/light mode toggle, fluid cursor animations, and glassmorphic micro-interactions.

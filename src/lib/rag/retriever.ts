@@ -37,7 +37,7 @@ export function retrieveContext(rawQuery: string): RetrievalResult {
     detectedIntent = 'age';
   } else if (/\b(education|educational|degree|college|university|study|studying|vit|iit|undergraduate|btech|b tech|cgpa|courses)\b/.test(query)) {
     detectedIntent = 'education';
-  } else if (/\b(internship|job|experience|work|wubble|nexie|runable|company|career)\b/.test(query)) {
+  } else if (/\b(internship|job|experience|work|nexie|runable|company|career)\b/.test(query)) {
     detectedIntent = 'experience';
   } else if (/\b(projects|project|continuum|video agent|meridian|github repo|built)\b/.test(query)) {
     detectedIntent = 'projects';

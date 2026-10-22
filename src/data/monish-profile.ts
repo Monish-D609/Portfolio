@@ -47,20 +47,6 @@ export const MONISH_PROFILE = {
 
   workExperience: [
     {
-      company: 'Wubble AI',
-      role: 'AI Intern',
-      timeline: '2 Months (Current)',
-      type: 'Remote Internship',
-      companyDescription: "Singapore-based startup redefining generative music with the world's first B2B AI Music platform, backed by Antler, Google, and NVIDIA (Top 5 startup in Asia).",
-      responsibilities: [
-        'Agent Architecture: Design, build, and iterate on core agentic loops (autonomous planning, memory management, tool integration).',
-        'System-Prompt Engineering: Run evaluations to improve agent persona consistency, safety, and latency.',
-        'Custom Tooling & APIs: Build micro-services and production RESTful APIs using FastAPI and OpenAPI.',
-        'Testing & Validation: Create reproducible simulation test rigs for agent reliability.',
-        'Cloud & CI/CD: Containerize components with Docker and manage deployments on GKE and Google Cloud Run.',
-      ],
-    },
-    {
       company: 'Nexie.ai',
       role: 'Founding Head of Reddit Growth & Software Developer',
       timeline: 'July 2026 – Present',

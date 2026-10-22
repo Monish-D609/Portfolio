@@ -378,7 +378,7 @@ export function Others() {
                     </span>
                   </div>
                   <p className="mt-0.5 font-sans text-xs sm:text-sm text-[#71717A] dark:text-[#9A9A9A]">
-                    B.Tech CSE (Data Science) · VIT Chennai | AI Intern @ Wubble AI
+                    B.Tech CSE (Data Science) · VIT Chennai | AI/ML Engineer · Open to Work
                   </p>
                   <span className="mt-1 inline-block font-mono text-[11px] text-[#71717A] dark:text-[#9A9A9A]">
                     Click to view directly in browser tab
